@@ -1,0 +1,10 @@
+C:\Users\kdusek\Documents\Visual Studio 2015\Projects\ServiceVentures\SCLog\bin\Debug\SCLog.dll.config
+C:\Users\kdusek\Documents\Visual Studio 2015\Projects\ServiceVentures\SCLog\bin\Debug\SCLog.dll
+C:\Users\kdusek\Documents\Visual Studio 2015\Projects\ServiceVentures\SCLog\bin\Debug\SCLog.pdb
+C:\Users\kdusek\Documents\Visual Studio 2015\Projects\ServiceVentures\SCLog\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kdusek\Documents\Visual Studio 2015\Projects\ServiceVentures\SCLog\bin\Debug\RightNow.AddIns.AddInViews.dll
+C:\Users\kdusek\Documents\Visual Studio 2015\Projects\ServiceVentures\SCLog\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kdusek\Documents\Visual Studio 2015\Projects\ServiceVentures\SCLog\bin\Debug\RightNow.AddIns.AddInViews.xml
+C:\Users\kdusek\Documents\Visual Studio 2015\Projects\ServiceVentures\SCLog\obj\Debug\SCLog.csprojResolveAssemblyReference.cache
+C:\Users\kdusek\Documents\Visual Studio 2015\Projects\ServiceVentures\SCLog\obj\Debug\SCLog.dll
+C:\Users\kdusek\Documents\Visual Studio 2015\Projects\ServiceVentures\SCLog\obj\Debug\SCLog.pdb
