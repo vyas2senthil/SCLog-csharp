@@ -19,7 +19,7 @@ using System.ServiceModel;
 using System.ServiceModel.Channels;
 using RightNow.AddIns.AddInViews;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
+using System.Web.Script.Serialization;
 using SCLog.RightNowServiceReference;
 
 namespace ServiceVentures
@@ -59,6 +59,7 @@ namespace ServiceVentures
         private logLevel stdOutputThreshold;
         private extConfig extConfigs;
         private RightNowSyncPortClient client;
+        private const int maxStringBytes = 1048576;
         #endregion private properties
 
         public SCLog(
@@ -97,19 +98,22 @@ namespace ServiceVentures
                 }
             };
             List<GenericField> fields = new List<GenericField>();
+            if (message.Length > 255)
+                message = message.Substring(0, 255);
+
             fields.Add(createGenericField("Message", ItemsChoiceType.StringValue, message));
             fields.Add(createGenericField("MsgType", ItemsChoiceType.IntegerValue, (int)messageType));
             long memory = GC.GetTotalMemory(true) / (1024 * 1024);
             fields.Add(createGenericField("PeakMemory", ItemsChoiceType.IntegerValue, (int)memory));
 
             if (string.IsNullOrWhiteSpace(source) == false)
-                fields.Add(createGenericField("File", ItemsChoiceType.StringValue, source));
+                fields.Add(createGenericField("File", ItemsChoiceType.StringValue, trimMaxLengthString(source)));
 
             if (string.IsNullOrWhiteSpace(function) == false)
-                fields.Add(createGenericField("Function", ItemsChoiceType.StringValue, function));
+                fields.Add(createGenericField("Function", ItemsChoiceType.StringValue, trimMaxLengthString(function)));
 
             if (string.IsNullOrWhiteSpace(detail) == false)
-                fields.Add(createGenericField("Detail", ItemsChoiceType.StringValue, detail));
+                fields.Add(createGenericField("Detail", ItemsChoiceType.StringValue, trimMaxLengthString(detail)));
 
             fields.Add(createGenericField("TimeElapsed", ItemsChoiceType.IntegerValue, timeElapsed));
             fields.Add(createGenericField("scProductExtension", ItemsChoiceType.NamedIDValue,
@@ -124,7 +128,7 @@ namespace ServiceVentures
             ));
 
             if (!string.IsNullOrWhiteSpace(detail))
-                fields.Add(createGenericField("Detail", ItemsChoiceType.StringValue, detail));
+                fields.Add(createGenericField("Detail", ItemsChoiceType.StringValue, trimMaxLengthString(detail)));
 
             go.GenericFields = fields.ToArray();
 
@@ -139,6 +143,58 @@ namespace ServiceVentures
             // check result and save incident id
             if (results != null && results.Length > 0)
             {
+                bool xRefsPresent = false;
+                GenericObject xRefObj = new GenericObject
+                {
+                    ObjectType = new RNObjectType
+                    {
+                        Namespace = "SvcVentures", // Custom Object
+                        TypeName = "scLogXref" // Custom Object
+                    }
+                };
+                List<GenericField> xRefFields = new List<GenericField>();
+                if (incident != null)
+                {
+                    xRefsPresent = true;
+                    xRefFields.Add(createGenericField("Incident", ItemsChoiceType.NamedIDValue,
+                        new NamedID
+                        {
+                            ID = new ID
+                            {
+                                id = (int)incident.ID.id,
+                                idSpecified = true
+                            }
+                        }));
+                }
+                if (contact != null)
+                {
+                    xRefsPresent = true;
+                    xRefFields.Add(createGenericField("Contact", ItemsChoiceType.NamedIDValue,
+                        new NamedID
+                        {
+                            ID = new ID
+                            {
+                                id = (int)contact.ID.id,
+                                idSpecified = true
+                            }
+                        }));
+                }
+                if (xRefsPresent == false)
+                {
+                    return true;
+                }
+                xRefFields.Add(createGenericField("scLog", ItemsChoiceType.NamedIDValue,
+                    new NamedID
+                    {
+                        ID = new ID
+                        {
+                            id = (int)results[0].ID.id,
+                            idSpecified = true
+                        }
+                    }
+                ));
+                xRefObj.GenericFields = xRefFields.ToArray();
+                RNObject[] xRefResults = this.client.Create(clientInfoHeader, new RNObject[] { xRefObj }, cpo);
                 return true;
             }
             else
@@ -160,6 +216,11 @@ namespace ServiceVentures
         public Boolean notice(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0)
         {
             return this.log(message, detail, incident, contact, source, function, timeElapsed, logLevel.Notice);
+        }
+
+        public Boolean click(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0)
+        {
+            return this.log(message, detail, incident, contact, source, function, timeElapsed, logLevel.Click);
         }
 
         public Boolean initializeLogger(IGlobalContext globalContext)
@@ -212,9 +273,8 @@ namespace ServiceVentures
             }
             GenericObject extentionObj = (GenericObject)currentExt;
             string extConfigJson = extentionObj.GenericFields.FirstOrDefault<GenericField>(c => c.name == "ExtConfiguration").DataValue.Items[0].ToString();
-            this.extConfigs = JsonConvert.DeserializeObject<extConfig>(extConfigJson);
-            //var serializer = new JavaScriptSerializer(); - use this instead of newtonsoft if you prefer
-            //this.extConfigs = serializer.Deserialize<extConfig>(extConfigJson);
+            var serializer = new JavaScriptSerializer();
+            this.extConfigs = serializer.Deserialize<extConfig>(extConfigJson);
             return currentExt;
         }
 
@@ -299,6 +359,20 @@ namespace ServiceVentures
             gf.DataValue.ItemsElementName = new ItemsChoiceType[] { itemsChoiceType };
             gf.DataValue.Items = new object[] { Value };
             return gf;
+        }
+
+        private string trimMaxLengthString(string value)
+        {
+            int stringBytes = ASCIIEncoding.Unicode.GetByteCount(value);
+            if (stringBytes > maxStringBytes)
+            {
+                int maxChars = maxStringBytes / sizeof(Char);
+                return value.Substring(0, maxChars - 1);
+            }
+            else
+            {
+                return value;
+            }
         }
     }
 
