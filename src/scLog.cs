@@ -78,8 +78,7 @@ namespace ServiceVentures
             this.functionServed = functionServed;
             this.callingFile = callingFile;
         }
-
-        public Boolean log(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0, logLevel messageType = logLevel.Debug)
+        public Boolean log(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0, logLevel messageType = logLevel.Debug, string host = null, int processID = 0)
         {
             if (this.extConfigs == null)
             {
@@ -115,6 +114,10 @@ namespace ServiceVentures
             if (string.IsNullOrWhiteSpace(detail) == false)
                 fields.Add(createGenericField("Detail", ItemsChoiceType.StringValue, trimMaxLengthString(detail)));
 
+            if (string.IsNullOrWhiteSpace(host) == false)
+                fields.Add(createGenericField("Host", ItemsChoiceType.StringValue, trimMaxLengthString(host)));
+
+            fields.Add(createGenericField("ProcessID", ItemsChoiceType.IntegerValue, processID));
             fields.Add(createGenericField("TimeElapsed", ItemsChoiceType.IntegerValue, timeElapsed));
             fields.Add(createGenericField("scProductExtension", ItemsChoiceType.NamedIDValue,
                 new NamedID
