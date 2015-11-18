@@ -8,3 +8,8 @@ C:\Users\kdusek\Documents\Visual Studio 2015\Projects\ServiceVentures\SCLog\bin\
 C:\Users\kdusek\Documents\Visual Studio 2015\Projects\ServiceVentures\SCLog\obj\Debug\SCLog.csprojResolveAssemblyReference.cache
 C:\Users\kdusek\Documents\Visual Studio 2015\Projects\ServiceVentures\SCLog\obj\Debug\SCLog.dll
 C:\Users\kdusek\Documents\Visual Studio 2015\Projects\ServiceVentures\SCLog\obj\Debug\SCLog.pdb
+C:\Users\kdusek\Documents\GitHub\SCLog-csharp\src\bin\Debug\SCLog.dll.config
+C:\Users\kdusek\Documents\GitHub\SCLog-csharp\src\bin\Debug\SCLog.dll
+C:\Users\kdusek\Documents\GitHub\SCLog-csharp\src\bin\Debug\SCLog.pdb
+C:\Users\kdusek\Documents\GitHub\SCLog-csharp\src\obj\Debug\SCLog.dll
+C:\Users\kdusek\Documents\GitHub\SCLog-csharp\src\obj\Debug\SCLog.pdb

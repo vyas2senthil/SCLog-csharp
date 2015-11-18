@@ -7,7 +7,7 @@
     <ProjectGuid>{55AEBB33-0CA9-4A4F-875C-3A427F003EC8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SCLog</RootNamespace>
+    <RootNamespace>ServiceVentures</RootNamespace>
     <AssemblyName>SCLog</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\Scientifik\StatusBar\bin\Debug\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="RightNow.AddIns.AddInViews">
       <HintPath>..\..\..\..\..\AppData\Roaming\RightNow_Technologies\oow2015\15.11.0.107\AddInPipeline\AddInViews\RightNow.AddIns.AddInViews.dll</HintPath>
     </Reference>
@@ -41,6 +38,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,85 +61,85 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Service References\RightNowServiceReference\RightNow.wsdl" />
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.BatchResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.BatchResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.BatchResponseItem.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.BatchResponseItem.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.ConvertGenericToObjectResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.ConvertGenericToObjectResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.ConvertObjectToGenericResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.ConvertObjectToGenericResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.CreateResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.CreateResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.CSVTableSet.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.CSVTableSet.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.DestroyResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.DestroyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.ExecuteMarketingFlowResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.GetFileDataResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.GetFileDataResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.GetMetaDataForClassResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.GetMetaDataForClassResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.GetMetaDataResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.GetMetaDataResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.GetResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.GetResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.GetValuesForNamedIDResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.GetValuesForNamedIDResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.MetaDataClass.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.MetaDataClass.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.NamedID.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.NamedID.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.NamedIDWithParent.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.NamedIDWithParent.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.QueryCSVResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.QueryCSVResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.QueryObjectsResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.QueryObjectsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.QueryResultData.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.QueryResultData.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.ResetContactPasswordResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.ResetContactPasswordResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.RNObject.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.RNObject.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.RunAnalyticsReportResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.RunAnalyticsReportResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.SendMailingToContactResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.SendMailingToContactResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.TransferSubObjectsResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.TransferSubObjectsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\RightNowServiceReference\SCLog.RightNowServiceReference.UpdateResponse.datasource">
+    <None Include="Service References\RightNowServiceReference\ServiceVentures.RightNowServiceReference.UpdateResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\RightNowServiceReference\soap.xsd">

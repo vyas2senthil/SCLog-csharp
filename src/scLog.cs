@@ -20,7 +20,7 @@ using System.ServiceModel.Channels;
 using RightNow.AddIns.AddInViews;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
-using SCLog.RightNowServiceReference;
+using ServiceVentures.RightNowServiceReference;
 
 namespace ServiceVentures
 {
@@ -206,24 +206,29 @@ namespace ServiceVentures
             }
         }
 
-        public Boolean error(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0)
+        public Boolean fatal(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0, string host = null, int processID = 0)
         {
-            return this.log(message, detail, incident, contact, source, function, timeElapsed, logLevel.Error);
+            return this.log(message, detail, incident, contact, source, function, timeElapsed, logLevel.Fatal, host, processID);
         }
 
-        public Boolean debug(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0)
+        public Boolean error(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0, string host = null, int processID = 0)
         {
-            return this.log(message, detail, incident, contact, source, function, timeElapsed, logLevel.Debug);
+            return this.log(message, detail, incident, contact, source, function, timeElapsed, logLevel.Error, host, processID);
         }
 
-        public Boolean notice(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0)
+        public Boolean warning(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0, string host = null, int processID = 0)
         {
-            return this.log(message, detail, incident, contact, source, function, timeElapsed, logLevel.Notice);
+            return this.log(message, detail, incident, contact, source, function, timeElapsed, logLevel.Warning, host, processID);
         }
 
-        public Boolean click(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0)
+        public Boolean debug(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0, string host = null, int processID = 0)
         {
-            return this.log(message, detail, incident, contact, source, function, timeElapsed, logLevel.Click);
+            return this.log(message, detail, incident, contact, source, function, timeElapsed, logLevel.Debug, host, processID);
+        }
+
+        public Boolean notice(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0, string host = null, int processID = 0)
+        {
+            return this.log(message, detail, incident, contact, source, function, timeElapsed, logLevel.Notice, host, processID);
         }
 
         public Boolean initializeLogger(IGlobalContext globalContext)

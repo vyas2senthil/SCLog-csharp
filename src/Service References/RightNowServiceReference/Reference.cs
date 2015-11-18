@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SCLog.RightNowServiceReference {
+namespace ServiceVentures.RightNowServiceReference {
     
     
     /// <remarks/>
@@ -274,10 +274,10 @@ namespace SCLog.RightNowServiceReference {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(NamedReadOnlyID))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(NamedIDDelta))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(MenuAssignableAccount))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AccessLevelType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(NamedReadOnlyID))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(NamedIDDelta))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.79.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -422,6 +422,24 @@ namespace SCLog.RightNowServiceReference {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:objects.ws.rightnow.com/v1_2")]
+    public partial class MenuAssignableAccount : NamedID {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.79.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:objects.ws.rightnow.com/v1_2")]
+    public partial class AccessLevelType : NamedID {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.79.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:base.ws.rightnow.com/v1_2")]
     public partial class NamedReadOnlyID : NamedID {
     }
@@ -480,24 +498,6 @@ namespace SCLog.RightNowServiceReference {
         
         /// <remarks/>
         update,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.79.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:objects.ws.rightnow.com/v1_2")]
-    public partial class MenuAssignableAccount : NamedID {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.79.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:objects.ws.rightnow.com/v1_2")]
-    public partial class AccessLevelType : NamedID {
     }
     
     /// <remarks/>
@@ -19173,263 +19173,263 @@ namespace SCLog.RightNowServiceReference {
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message CreateRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="Create", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="Create", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="Create", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="Create", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="Create", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="Create", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="Create", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.CreateResponse Create(SCLog.RightNowServiceReference.CreateRequest request);
+        ServiceVentures.RightNowServiceReference.CreateResponse Create(ServiceVentures.RightNowServiceReference.CreateRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="Create", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.CreateResponse> CreateAsync(SCLog.RightNowServiceReference.CreateRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.CreateResponse> CreateAsync(ServiceVentures.RightNowServiceReference.CreateRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message GetRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="Get", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="Get", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="Get", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="Get", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="Get", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="Get", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="Get", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.GetResponse Get(SCLog.RightNowServiceReference.GetRequest request);
+        ServiceVentures.RightNowServiceReference.GetResponse Get(ServiceVentures.RightNowServiceReference.GetRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="Get", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetResponse> GetAsync(SCLog.RightNowServiceReference.GetRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetResponse> GetAsync(ServiceVentures.RightNowServiceReference.GetRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message UpdateRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="Update", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="Update", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="Update", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="Update", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="Update", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="Update", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="Update", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.UpdateResponse Update(SCLog.RightNowServiceReference.UpdateRequest request);
+        ServiceVentures.RightNowServiceReference.UpdateResponse Update(ServiceVentures.RightNowServiceReference.UpdateRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="Update", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.UpdateResponse> UpdateAsync(SCLog.RightNowServiceReference.UpdateRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.UpdateResponse> UpdateAsync(ServiceVentures.RightNowServiceReference.UpdateRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message DestroyRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="Destroy", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="Destroy", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="Destroy", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="Destroy", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="Destroy", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="Destroy", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="Destroy", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.DestroyResponse Destroy(SCLog.RightNowServiceReference.DestroyRequest request);
+        ServiceVentures.RightNowServiceReference.DestroyResponse Destroy(ServiceVentures.RightNowServiceReference.DestroyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="Destroy", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.DestroyResponse> DestroyAsync(SCLog.RightNowServiceReference.DestroyRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.DestroyResponse> DestroyAsync(ServiceVentures.RightNowServiceReference.DestroyRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message QueryObjectsRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="QueryObjects", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="QueryObjects", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="QueryObjects", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="QueryObjects", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="QueryObjects", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="QueryObjects", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="QueryObjects", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.QueryObjectsResponse QueryObjects(SCLog.RightNowServiceReference.QueryObjectsRequest request);
+        ServiceVentures.RightNowServiceReference.QueryObjectsResponse QueryObjects(ServiceVentures.RightNowServiceReference.QueryObjectsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="QueryObjects", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.QueryObjectsResponse> QueryObjectsAsync(SCLog.RightNowServiceReference.QueryObjectsRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.QueryObjectsResponse> QueryObjectsAsync(ServiceVentures.RightNowServiceReference.QueryObjectsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="QueryCSV", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="QueryCSV", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="QueryCSV", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="QueryCSV", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="QueryCSV", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="QueryCSV", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="QueryCSV", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.QueryCSVResponse QueryCSV(SCLog.RightNowServiceReference.QueryCSVRequest request);
+        ServiceVentures.RightNowServiceReference.QueryCSVResponse QueryCSV(ServiceVentures.RightNowServiceReference.QueryCSVRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="QueryCSV", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.QueryCSVResponse> QueryCSVAsync(SCLog.RightNowServiceReference.QueryCSVRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.QueryCSVResponse> QueryCSVAsync(ServiceVentures.RightNowServiceReference.QueryCSVRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="RunAnalyticsReport", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="RunAnalyticsReport", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="RunAnalyticsReport", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="RunAnalyticsReport", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="RunAnalyticsReport", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="RunAnalyticsReport", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="RunAnalyticsReport", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.RunAnalyticsReportResponse RunAnalyticsReport(SCLog.RightNowServiceReference.RunAnalyticsReportRequest request);
+        ServiceVentures.RightNowServiceReference.RunAnalyticsReportResponse RunAnalyticsReport(ServiceVentures.RightNowServiceReference.RunAnalyticsReportRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="RunAnalyticsReport", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.RunAnalyticsReportResponse> RunAnalyticsReportAsync(SCLog.RightNowServiceReference.RunAnalyticsReportRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.RunAnalyticsReportResponse> RunAnalyticsReportAsync(ServiceVentures.RightNowServiceReference.RunAnalyticsReportRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message ExecuteMarketingFlowRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="ExecuteMarketingFlow", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="ExecuteMarketingFlow", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="ExecuteMarketingFlow", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="ExecuteMarketingFlow", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="ExecuteMarketingFlow", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="ExecuteMarketingFlow", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="ExecuteMarketingFlow", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.ExecuteMarketingFlowResponse ExecuteMarketingFlow(SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest request);
+        ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowResponse ExecuteMarketingFlow(ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="ExecuteMarketingFlow", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ExecuteMarketingFlowResponse> ExecuteMarketingFlowAsync(SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowResponse> ExecuteMarketingFlowAsync(ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message GetFileDataRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="GetFileData", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="GetFileData", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="GetFileData", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="GetFileData", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="GetFileData", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="GetFileData", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="GetFileData", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.GetFileDataResponse GetFileData(SCLog.RightNowServiceReference.GetFileDataRequest request);
+        ServiceVentures.RightNowServiceReference.GetFileDataResponse GetFileData(ServiceVentures.RightNowServiceReference.GetFileDataRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="GetFileData", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetFileDataResponse> GetFileDataAsync(SCLog.RightNowServiceReference.GetFileDataRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetFileDataResponse> GetFileDataAsync(ServiceVentures.RightNowServiceReference.GetFileDataRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message ResetContactPasswordRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="ResetContactPassword", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="ResetContactPassword", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="ResetContactPassword", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="ResetContactPassword", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="ResetContactPassword", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="ResetContactPassword", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="ResetContactPassword", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.ResetContactPasswordResponse ResetContactPassword(SCLog.RightNowServiceReference.ResetContactPasswordRequest request);
+        ServiceVentures.RightNowServiceReference.ResetContactPasswordResponse ResetContactPassword(ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="ResetContactPassword", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ResetContactPasswordResponse> ResetContactPasswordAsync(SCLog.RightNowServiceReference.ResetContactPasswordRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ResetContactPasswordResponse> ResetContactPasswordAsync(ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message SendMailingToContactRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="SendMailingToContact", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="SendMailingToContact", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="SendMailingToContact", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="SendMailingToContact", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="SendMailingToContact", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="SendMailingToContact", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="SendMailingToContact", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.SendMailingToContactResponse SendMailingToContact(SCLog.RightNowServiceReference.SendMailingToContactRequest request);
+        ServiceVentures.RightNowServiceReference.SendMailingToContactResponse SendMailingToContact(ServiceVentures.RightNowServiceReference.SendMailingToContactRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="SendMailingToContact", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.SendMailingToContactResponse> SendMailingToContactAsync(SCLog.RightNowServiceReference.SendMailingToContactRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.SendMailingToContactResponse> SendMailingToContactAsync(ServiceVentures.RightNowServiceReference.SendMailingToContactRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message TransferSubObjectsRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="TransferSubObjects", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="TransferSubObjects", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="TransferSubObjects", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="TransferSubObjects", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="TransferSubObjects", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="TransferSubObjects", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="TransferSubObjects", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.TransferSubObjectsResponse TransferSubObjects(SCLog.RightNowServiceReference.TransferSubObjectsRequest request);
+        ServiceVentures.RightNowServiceReference.TransferSubObjectsResponse TransferSubObjects(ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="TransferSubObjects", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.TransferSubObjectsResponse> TransferSubObjectsAsync(SCLog.RightNowServiceReference.TransferSubObjectsRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.TransferSubObjectsResponse> TransferSubObjectsAsync(ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message BatchRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="Batch", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="Batch", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="Batch", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="Batch", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="Batch", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="Batch", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="Batch", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.BatchResponse Batch(SCLog.RightNowServiceReference.BatchRequest request);
+        ServiceVentures.RightNowServiceReference.BatchResponse Batch(ServiceVentures.RightNowServiceReference.BatchRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="Batch", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.BatchResponse> BatchAsync(SCLog.RightNowServiceReference.BatchRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.BatchResponse> BatchAsync(ServiceVentures.RightNowServiceReference.BatchRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message GetMetaDataRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="GetMetaData", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="GetMetaData", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="GetMetaData", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="GetMetaData", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="GetMetaData", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="GetMetaData", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="GetMetaData", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.GetMetaDataResponse GetMetaData(SCLog.RightNowServiceReference.GetMetaDataRequest request);
+        ServiceVentures.RightNowServiceReference.GetMetaDataResponse GetMetaData(ServiceVentures.RightNowServiceReference.GetMetaDataRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="GetMetaData", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataResponse> GetMetaDataAsync(SCLog.RightNowServiceReference.GetMetaDataRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataResponse> GetMetaDataAsync(ServiceVentures.RightNowServiceReference.GetMetaDataRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message GetMetaDataForClassRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="GetMetaDataForClass", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="GetMetaDataForClass", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="GetMetaDataForClass", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="GetMetaDataForClass", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="GetMetaDataForClass", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="GetMetaDataForClass", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="GetMetaDataForClass", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.GetMetaDataForClassResponse GetMetaDataForClass(SCLog.RightNowServiceReference.GetMetaDataForClassRequest request);
+        ServiceVentures.RightNowServiceReference.GetMetaDataForClassResponse GetMetaDataForClass(ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="GetMetaDataForClass", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataForClassResponse> GetMetaDataForClassAsync(SCLog.RightNowServiceReference.GetMetaDataForClassRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataForClassResponse> GetMetaDataForClassAsync(ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message GetMetaDataLastChangeTimeRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="GetMetaDataLastChangeTime", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="GetMetaDataLastChangeTime", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="GetMetaDataLastChangeTime", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="GetMetaDataLastChangeTime", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="GetMetaDataLastChangeTime", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="GetMetaDataLastChangeTime", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="GetMetaDataLastChangeTime", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeResponse GetMetaDataLastChangeTime(SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request);
+        ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeResponse GetMetaDataLastChangeTime(ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="GetMetaDataLastChangeTime", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeResponse> GetMetaDataLastChangeTimeAsync(SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeResponse> GetMetaDataLastChangeTimeAsync(ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message GetValuesForNamedIDRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="GetValuesForNamedID", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="GetValuesForNamedID", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="GetValuesForNamedID", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="GetValuesForNamedID", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="GetValuesForNamedID", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="GetValuesForNamedID", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="GetValuesForNamedID", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.GetValuesForNamedIDResponse GetValuesForNamedID(SCLog.RightNowServiceReference.GetValuesForNamedIDRequest request);
+        ServiceVentures.RightNowServiceReference.GetValuesForNamedIDResponse GetValuesForNamedID(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="GetValuesForNamedID", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetValuesForNamedIDResponse> GetValuesForNamedIDAsync(SCLog.RightNowServiceReference.GetValuesForNamedIDRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetValuesForNamedIDResponse> GetValuesForNamedIDAsync(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message GetValuesForNamedIDHierarchyRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="GetValuesForNamedIDHierarchy", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="GetValuesForNamedIDHierarchy", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="GetValuesForNamedIDHierarchy", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="GetValuesForNamedIDHierarchy", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="GetValuesForNamedIDHierarchy", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="GetValuesForNamedIDHierarchy", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="GetValuesForNamedIDHierarchy", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse GetValuesForNamedIDHierarchy(SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request);
+        ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse GetValuesForNamedIDHierarchy(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="GetValuesForNamedIDHierarchy", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse> GetValuesForNamedIDHierarchyAsync(SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse> GetValuesForNamedIDHierarchyAsync(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message ConvertGenericToObjectRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="ConvertGenericToObject", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="ConvertGenericToObject", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="ConvertGenericToObject", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="ConvertGenericToObject", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="ConvertGenericToObject", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="ConvertGenericToObject", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="ConvertGenericToObject", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.ConvertGenericToObjectResponse ConvertGenericToObject(SCLog.RightNowServiceReference.ConvertGenericToObjectRequest request);
+        ServiceVentures.RightNowServiceReference.ConvertGenericToObjectResponse ConvertGenericToObject(ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="ConvertGenericToObject", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ConvertGenericToObjectResponse> ConvertGenericToObjectAsync(SCLog.RightNowServiceReference.ConvertGenericToObjectRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ConvertGenericToObjectResponse> ConvertGenericToObjectAsync(ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message ConvertObjectToGenericRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="ConvertObjectToGeneric", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="ConvertObjectToGeneric", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="ConvertObjectToGeneric", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="ConvertObjectToGeneric", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="ConvertObjectToGeneric", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="ConvertObjectToGeneric", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="ConvertObjectToGeneric", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.ConvertObjectToGenericResponse ConvertObjectToGeneric(SCLog.RightNowServiceReference.ConvertObjectToGenericRequest request);
+        ServiceVentures.RightNowServiceReference.ConvertObjectToGenericResponse ConvertObjectToGeneric(ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="ConvertObjectToGeneric", ReplyAction="*")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ConvertObjectToGenericResponse> ConvertObjectToGenericAsync(SCLog.RightNowServiceReference.ConvertObjectToGenericRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ConvertObjectToGenericResponse> ConvertObjectToGenericAsync(ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest request);
     }
     
     /// <remarks/>
@@ -19471,19 +19471,19 @@ namespace SCLog.RightNowServiceReference {
     public partial class CreateRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("RNObjects")]
-        public SCLog.RightNowServiceReference.RNObject[] RNObjects;
+        public ServiceVentures.RightNowServiceReference.RNObject[] RNObjects;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=1)]
-        public SCLog.RightNowServiceReference.CreateProcessingOptions ProcessingOptions;
+        public ServiceVentures.RightNowServiceReference.CreateProcessingOptions ProcessingOptions;
         
         public CreateRequest() {
         }
         
-        public CreateRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.CreateProcessingOptions ProcessingOptions) {
+        public CreateRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.CreateProcessingOptions ProcessingOptions) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.RNObjects = RNObjects;
             this.ProcessingOptions = ProcessingOptions;
@@ -19498,12 +19498,12 @@ namespace SCLog.RightNowServiceReference {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("RNObjects", IsNullable=false)]
-        public SCLog.RightNowServiceReference.RNObject[] RNObjectsResult;
+        public ServiceVentures.RightNowServiceReference.RNObject[] RNObjectsResult;
         
         public CreateResponse() {
         }
         
-        public CreateResponse(SCLog.RightNowServiceReference.RNObject[] RNObjectsResult) {
+        public CreateResponse(ServiceVentures.RightNowServiceReference.RNObject[] RNObjectsResult) {
             this.RNObjectsResult = RNObjectsResult;
         }
     }
@@ -19547,19 +19547,19 @@ namespace SCLog.RightNowServiceReference {
     public partial class GetRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("RNObjects")]
-        public SCLog.RightNowServiceReference.RNObject[] RNObjects;
+        public ServiceVentures.RightNowServiceReference.RNObject[] RNObjects;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=1)]
-        public SCLog.RightNowServiceReference.GetProcessingOptions ProcessingOptions;
+        public ServiceVentures.RightNowServiceReference.GetProcessingOptions ProcessingOptions;
         
         public GetRequest() {
         }
         
-        public GetRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.GetProcessingOptions ProcessingOptions) {
+        public GetRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.GetProcessingOptions ProcessingOptions) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.RNObjects = RNObjects;
             this.ProcessingOptions = ProcessingOptions;
@@ -19574,12 +19574,12 @@ namespace SCLog.RightNowServiceReference {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("RNObjects", IsNullable=false)]
-        public SCLog.RightNowServiceReference.RNObject[] RNObjectsResult;
+        public ServiceVentures.RightNowServiceReference.RNObject[] RNObjectsResult;
         
         public GetResponse() {
         }
         
-        public GetResponse(SCLog.RightNowServiceReference.RNObject[] RNObjectsResult) {
+        public GetResponse(ServiceVentures.RightNowServiceReference.RNObject[] RNObjectsResult) {
             this.RNObjectsResult = RNObjectsResult;
         }
     }
@@ -19637,19 +19637,19 @@ namespace SCLog.RightNowServiceReference {
     public partial class UpdateRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("RNObjects")]
-        public SCLog.RightNowServiceReference.RNObject[] RNObjects;
+        public ServiceVentures.RightNowServiceReference.RNObject[] RNObjects;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=1)]
-        public SCLog.RightNowServiceReference.UpdateProcessingOptions ProcessingOptions;
+        public ServiceVentures.RightNowServiceReference.UpdateProcessingOptions ProcessingOptions;
         
         public UpdateRequest() {
         }
         
-        public UpdateRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.UpdateProcessingOptions ProcessingOptions) {
+        public UpdateRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.UpdateProcessingOptions ProcessingOptions) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.RNObjects = RNObjects;
             this.ProcessingOptions = ProcessingOptions;
@@ -19719,19 +19719,19 @@ namespace SCLog.RightNowServiceReference {
     public partial class DestroyRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("RNObjects")]
-        public SCLog.RightNowServiceReference.RNObject[] RNObjects;
+        public ServiceVentures.RightNowServiceReference.RNObject[] RNObjects;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=1)]
-        public SCLog.RightNowServiceReference.DestroyProcessingOptions ProcessingOptions;
+        public ServiceVentures.RightNowServiceReference.DestroyProcessingOptions ProcessingOptions;
         
         public DestroyRequest() {
         }
         
-        public DestroyRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.DestroyProcessingOptions ProcessingOptions) {
+        public DestroyRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.DestroyProcessingOptions ProcessingOptions) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.RNObjects = RNObjects;
             this.ProcessingOptions = ProcessingOptions;
@@ -19876,14 +19876,14 @@ namespace SCLog.RightNowServiceReference {
     public partial class QueryObjectsRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         public string Query;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute("ObjectTemplates")]
-        public SCLog.RightNowServiceReference.RNObject[] ObjectTemplates;
+        public ServiceVentures.RightNowServiceReference.RNObject[] ObjectTemplates;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=2)]
         public int PageSize;
@@ -19891,7 +19891,7 @@ namespace SCLog.RightNowServiceReference {
         public QueryObjectsRequest() {
         }
         
-        public QueryObjectsRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, SCLog.RightNowServiceReference.RNObject[] ObjectTemplates, int PageSize) {
+        public QueryObjectsRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, ServiceVentures.RightNowServiceReference.RNObject[] ObjectTemplates, int PageSize) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.Query = Query;
             this.ObjectTemplates = ObjectTemplates;
@@ -19907,12 +19907,12 @@ namespace SCLog.RightNowServiceReference {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("Result")]
-        public SCLog.RightNowServiceReference.QueryResultData[] Result;
+        public ServiceVentures.RightNowServiceReference.QueryResultData[] Result;
         
         public QueryObjectsResponse() {
         }
         
-        public QueryObjectsResponse(SCLog.RightNowServiceReference.QueryResultData[] Result) {
+        public QueryObjectsResponse(ServiceVentures.RightNowServiceReference.QueryResultData[] Result) {
             this.Result = Result;
         }
     }
@@ -20017,7 +20017,7 @@ namespace SCLog.RightNowServiceReference {
     public partial class QueryCSVRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         public string Query;
@@ -20037,7 +20037,7 @@ namespace SCLog.RightNowServiceReference {
         public QueryCSVRequest() {
         }
         
-        public QueryCSVRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, int PageSize, string Delimiter, bool ReturnRawResult, bool DisableMTOM) {
+        public QueryCSVRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, int PageSize, string Delimiter, bool ReturnRawResult, bool DisableMTOM) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.Query = Query;
             this.PageSize = PageSize;
@@ -20053,7 +20053,7 @@ namespace SCLog.RightNowServiceReference {
     public partial class QueryCSVResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
-        public SCLog.RightNowServiceReference.CSVTableSet CSVTableSet;
+        public ServiceVentures.RightNowServiceReference.CSVTableSet CSVTableSet;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
@@ -20062,7 +20062,7 @@ namespace SCLog.RightNowServiceReference {
         public QueryCSVResponse() {
         }
         
-        public QueryCSVResponse(SCLog.RightNowServiceReference.CSVTableSet CSVTableSet, byte[] FileData) {
+        public QueryCSVResponse(ServiceVentures.RightNowServiceReference.CSVTableSet CSVTableSet, byte[] FileData) {
             this.CSVTableSet = CSVTableSet;
             this.FileData = FileData;
         }
@@ -20074,10 +20074,10 @@ namespace SCLog.RightNowServiceReference {
     public partial class RunAnalyticsReportRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
-        public SCLog.RightNowServiceReference.AnalyticsReport AnalyticsReport;
+        public ServiceVentures.RightNowServiceReference.AnalyticsReport AnalyticsReport;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=1)]
         public int Limit;
@@ -20097,7 +20097,7 @@ namespace SCLog.RightNowServiceReference {
         public RunAnalyticsReportRequest() {
         }
         
-        public RunAnalyticsReportRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.AnalyticsReport AnalyticsReport, int Limit, int Start, string Delimiter, bool ReturnRawResult, bool DisableMTOM) {
+        public RunAnalyticsReportRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.AnalyticsReport AnalyticsReport, int Limit, int Start, string Delimiter, bool ReturnRawResult, bool DisableMTOM) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.AnalyticsReport = AnalyticsReport;
             this.Limit = Limit;
@@ -20114,7 +20114,7 @@ namespace SCLog.RightNowServiceReference {
     public partial class RunAnalyticsReportResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
-        public SCLog.RightNowServiceReference.CSVTableSet CSVTableSet;
+        public ServiceVentures.RightNowServiceReference.CSVTableSet CSVTableSet;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
@@ -20123,7 +20123,7 @@ namespace SCLog.RightNowServiceReference {
         public RunAnalyticsReportResponse() {
         }
         
-        public RunAnalyticsReportResponse(SCLog.RightNowServiceReference.CSVTableSet CSVTableSet, byte[] FileData) {
+        public RunAnalyticsReportResponse(ServiceVentures.RightNowServiceReference.CSVTableSet CSVTableSet, byte[] FileData) {
             this.CSVTableSet = CSVTableSet;
             this.FileData = FileData;
         }
@@ -20136,13 +20136,13 @@ namespace SCLog.RightNowServiceReference {
     public partial class ExecuteMarketingFlowRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
-        public SCLog.RightNowServiceReference.ID ContactID;
+        public ServiceVentures.RightNowServiceReference.ID ContactID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=1)]
-        public SCLog.RightNowServiceReference.ID CampaignID;
+        public ServiceVentures.RightNowServiceReference.ID CampaignID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=2)]
         public string EntryPoint;
@@ -20150,7 +20150,7 @@ namespace SCLog.RightNowServiceReference {
         public ExecuteMarketingFlowRequest() {
         }
         
-        public ExecuteMarketingFlowRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID, SCLog.RightNowServiceReference.ID CampaignID, string EntryPoint) {
+        public ExecuteMarketingFlowRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID, ServiceVentures.RightNowServiceReference.ID CampaignID, string EntryPoint) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.ContactID = ContactID;
             this.CampaignID = CampaignID;
@@ -20175,13 +20175,13 @@ namespace SCLog.RightNowServiceReference {
     public partial class GetFileDataRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
-        public SCLog.RightNowServiceReference.RNObject RNObject;
+        public ServiceVentures.RightNowServiceReference.RNObject RNObject;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=1)]
-        public SCLog.RightNowServiceReference.ID FileID;
+        public ServiceVentures.RightNowServiceReference.ID FileID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=2)]
         public bool DisableMTOM;
@@ -20189,7 +20189,7 @@ namespace SCLog.RightNowServiceReference {
         public GetFileDataRequest() {
         }
         
-        public GetFileDataRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject RNObject, SCLog.RightNowServiceReference.ID FileID, bool DisableMTOM) {
+        public GetFileDataRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject RNObject, ServiceVentures.RightNowServiceReference.ID FileID, bool DisableMTOM) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.RNObject = RNObject;
             this.FileID = FileID;
@@ -20222,15 +20222,15 @@ namespace SCLog.RightNowServiceReference {
     public partial class ResetContactPasswordRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
-        public SCLog.RightNowServiceReference.ID ContactID;
+        public ServiceVentures.RightNowServiceReference.ID ContactID;
         
         public ResetContactPasswordRequest() {
         }
         
-        public ResetContactPasswordRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID) {
+        public ResetContactPasswordRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.ContactID = ContactID;
         }
@@ -20253,13 +20253,13 @@ namespace SCLog.RightNowServiceReference {
     public partial class SendMailingToContactRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
-        public SCLog.RightNowServiceReference.ID ContactID;
+        public ServiceVentures.RightNowServiceReference.ID ContactID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=1)]
-        public SCLog.RightNowServiceReference.ID MailingID;
+        public ServiceVentures.RightNowServiceReference.ID MailingID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -20267,19 +20267,19 @@ namespace SCLog.RightNowServiceReference {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=3)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public SCLog.RightNowServiceReference.ID IncidentID;
+        public ServiceVentures.RightNowServiceReference.ID IncidentID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=4)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public SCLog.RightNowServiceReference.ID OpportunityID;
+        public ServiceVentures.RightNowServiceReference.ID OpportunityID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=5)]
-        public SCLog.RightNowServiceReference.ID ChatID;
+        public ServiceVentures.RightNowServiceReference.ID ChatID;
         
         public SendMailingToContactRequest() {
         }
         
-        public SendMailingToContactRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID, SCLog.RightNowServiceReference.ID MailingID, System.Nullable<System.DateTime> ScheduledTime, SCLog.RightNowServiceReference.ID IncidentID, SCLog.RightNowServiceReference.ID OpportunityID, SCLog.RightNowServiceReference.ID ChatID) {
+        public SendMailingToContactRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID, ServiceVentures.RightNowServiceReference.ID MailingID, System.Nullable<System.DateTime> ScheduledTime, ServiceVentures.RightNowServiceReference.ID IncidentID, ServiceVentures.RightNowServiceReference.ID OpportunityID, ServiceVentures.RightNowServiceReference.ID ChatID) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.ContactID = ContactID;
             this.MailingID = MailingID;
@@ -20307,19 +20307,19 @@ namespace SCLog.RightNowServiceReference {
     public partial class TransferSubObjectsRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
-        public SCLog.RightNowServiceReference.RNObject DestinationRNObject;
+        public ServiceVentures.RightNowServiceReference.RNObject DestinationRNObject;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute("SourceRNObjects")]
-        public SCLog.RightNowServiceReference.RNObject[] SourceRNObjects;
+        public ServiceVentures.RightNowServiceReference.RNObject[] SourceRNObjects;
         
         public TransferSubObjectsRequest() {
         }
         
-        public TransferSubObjectsRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject DestinationRNObject, SCLog.RightNowServiceReference.RNObject[] SourceRNObjects) {
+        public TransferSubObjectsRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject DestinationRNObject, ServiceVentures.RightNowServiceReference.RNObject[] SourceRNObjects) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.DestinationRNObject = DestinationRNObject;
             this.SourceRNObjects = SourceRNObjects;
@@ -22817,16 +22817,16 @@ namespace SCLog.RightNowServiceReference {
     public partial class BatchRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("BatchRequestItem")]
-        public SCLog.RightNowServiceReference.BatchRequestItem[] BatchRequestItem;
+        public ServiceVentures.RightNowServiceReference.BatchRequestItem[] BatchRequestItem;
         
         public BatchRequest() {
         }
         
-        public BatchRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.BatchRequestItem[] BatchRequestItem) {
+        public BatchRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.BatchRequestItem[] BatchRequestItem) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.BatchRequestItem = BatchRequestItem;
         }
@@ -22840,12 +22840,12 @@ namespace SCLog.RightNowServiceReference {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("BatchResponseItem")]
-        public SCLog.RightNowServiceReference.BatchResponseItem[] BatchResponseItem;
+        public ServiceVentures.RightNowServiceReference.BatchResponseItem[] BatchResponseItem;
         
         public BatchResponse() {
         }
         
-        public BatchResponse(SCLog.RightNowServiceReference.BatchResponseItem[] BatchResponseItem) {
+        public BatchResponse(ServiceVentures.RightNowServiceReference.BatchResponseItem[] BatchResponseItem) {
             this.BatchResponseItem = BatchResponseItem;
         }
     }
@@ -22857,12 +22857,12 @@ namespace SCLog.RightNowServiceReference {
     public partial class GetMetaDataRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         public GetMetaDataRequest() {
         }
         
-        public GetMetaDataRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
+        public GetMetaDataRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
             this.ClientInfoHeader = ClientInfoHeader;
         }
     }
@@ -22875,12 +22875,12 @@ namespace SCLog.RightNowServiceReference {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("MetaDataClass")]
-        public SCLog.RightNowServiceReference.MetaDataClass[] MetaDataClass;
+        public ServiceVentures.RightNowServiceReference.MetaDataClass[] MetaDataClass;
         
         public GetMetaDataResponse() {
         }
         
-        public GetMetaDataResponse(SCLog.RightNowServiceReference.MetaDataClass[] MetaDataClass) {
+        public GetMetaDataResponse(ServiceVentures.RightNowServiceReference.MetaDataClass[] MetaDataClass) {
             this.MetaDataClass = MetaDataClass;
         }
     }
@@ -22892,7 +22892,7 @@ namespace SCLog.RightNowServiceReference {
     public partial class GetMetaDataForClassRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("ClassName")]
@@ -22900,7 +22900,7 @@ namespace SCLog.RightNowServiceReference {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute("QualifiedClassName")]
-        public SCLog.RightNowServiceReference.RNObjectType[] QualifiedClassName;
+        public ServiceVentures.RightNowServiceReference.RNObjectType[] QualifiedClassName;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute("MetaDataLink")]
@@ -22909,7 +22909,7 @@ namespace SCLog.RightNowServiceReference {
         public GetMetaDataForClassRequest() {
         }
         
-        public GetMetaDataForClassRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string[] ClassName, SCLog.RightNowServiceReference.RNObjectType[] QualifiedClassName, string[] MetaDataLink) {
+        public GetMetaDataForClassRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string[] ClassName, ServiceVentures.RightNowServiceReference.RNObjectType[] QualifiedClassName, string[] MetaDataLink) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.ClassName = ClassName;
             this.QualifiedClassName = QualifiedClassName;
@@ -22925,12 +22925,12 @@ namespace SCLog.RightNowServiceReference {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("MetaDataClass")]
-        public SCLog.RightNowServiceReference.MetaDataClass[] MetaDataClass;
+        public ServiceVentures.RightNowServiceReference.MetaDataClass[] MetaDataClass;
         
         public GetMetaDataForClassResponse() {
         }
         
-        public GetMetaDataForClassResponse(SCLog.RightNowServiceReference.MetaDataClass[] MetaDataClass) {
+        public GetMetaDataForClassResponse(ServiceVentures.RightNowServiceReference.MetaDataClass[] MetaDataClass) {
             this.MetaDataClass = MetaDataClass;
         }
     }
@@ -22942,12 +22942,12 @@ namespace SCLog.RightNowServiceReference {
     public partial class GetMetaDataLastChangeTimeRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         public GetMetaDataLastChangeTimeRequest() {
         }
         
-        public GetMetaDataLastChangeTimeRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
+        public GetMetaDataLastChangeTimeRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
             this.ClientInfoHeader = ClientInfoHeader;
         }
     }
@@ -22976,7 +22976,7 @@ namespace SCLog.RightNowServiceReference {
     public partial class GetValuesForNamedIDRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         public string PackageName;
@@ -22987,7 +22987,7 @@ namespace SCLog.RightNowServiceReference {
         public GetValuesForNamedIDRequest() {
         }
         
-        public GetValuesForNamedIDRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string PackageName, string FieldName) {
+        public GetValuesForNamedIDRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string PackageName, string FieldName) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.PackageName = PackageName;
             this.FieldName = FieldName;
@@ -23002,12 +23002,12 @@ namespace SCLog.RightNowServiceReference {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("Entry")]
-        public SCLog.RightNowServiceReference.NamedID[] Entry;
+        public ServiceVentures.RightNowServiceReference.NamedID[] Entry;
         
         public GetValuesForNamedIDResponse() {
         }
         
-        public GetValuesForNamedIDResponse(SCLog.RightNowServiceReference.NamedID[] Entry) {
+        public GetValuesForNamedIDResponse(ServiceVentures.RightNowServiceReference.NamedID[] Entry) {
             this.Entry = Entry;
         }
     }
@@ -23019,7 +23019,7 @@ namespace SCLog.RightNowServiceReference {
     public partial class GetValuesForNamedIDHierarchyRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         public string FieldName;
@@ -23027,7 +23027,7 @@ namespace SCLog.RightNowServiceReference {
         public GetValuesForNamedIDHierarchyRequest() {
         }
         
-        public GetValuesForNamedIDHierarchyRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string FieldName) {
+        public GetValuesForNamedIDHierarchyRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string FieldName) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.FieldName = FieldName;
         }
@@ -23041,12 +23041,12 @@ namespace SCLog.RightNowServiceReference {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("Entry")]
-        public SCLog.RightNowServiceReference.NamedIDWithParent[] Entry;
+        public ServiceVentures.RightNowServiceReference.NamedIDWithParent[] Entry;
         
         public GetValuesForNamedIDHierarchyResponse() {
         }
         
-        public GetValuesForNamedIDHierarchyResponse(SCLog.RightNowServiceReference.NamedIDWithParent[] Entry) {
+        public GetValuesForNamedIDHierarchyResponse(ServiceVentures.RightNowServiceReference.NamedIDWithParent[] Entry) {
             this.Entry = Entry;
         }
     }
@@ -23058,16 +23058,16 @@ namespace SCLog.RightNowServiceReference {
     public partial class ConvertGenericToObjectRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("RNObjects")]
-        public SCLog.RightNowServiceReference.RNObject[] RNObjects;
+        public ServiceVentures.RightNowServiceReference.RNObject[] RNObjects;
         
         public ConvertGenericToObjectRequest() {
         }
         
-        public ConvertGenericToObjectRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects) {
+        public ConvertGenericToObjectRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.RNObjects = RNObjects;
         }
@@ -23081,12 +23081,12 @@ namespace SCLog.RightNowServiceReference {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("RNObjects", IsNullable=false)]
-        public SCLog.RightNowServiceReference.RNObject[] RNObjectsResult;
+        public ServiceVentures.RightNowServiceReference.RNObject[] RNObjectsResult;
         
         public ConvertGenericToObjectResponse() {
         }
         
-        public ConvertGenericToObjectResponse(SCLog.RightNowServiceReference.RNObject[] RNObjectsResult) {
+        public ConvertGenericToObjectResponse(ServiceVentures.RightNowServiceReference.RNObject[] RNObjectsResult) {
             this.RNObjectsResult = RNObjectsResult;
         }
     }
@@ -23098,16 +23098,16 @@ namespace SCLog.RightNowServiceReference {
     public partial class ConvertObjectToGenericRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2")]
-        public SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
+        public ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("RNObjects")]
-        public SCLog.RightNowServiceReference.RNObject[] RNObjects;
+        public ServiceVentures.RightNowServiceReference.RNObject[] RNObjects;
         
         public ConvertObjectToGenericRequest() {
         }
         
-        public ConvertObjectToGenericRequest(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects) {
+        public ConvertObjectToGenericRequest(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects) {
             this.ClientInfoHeader = ClientInfoHeader;
             this.RNObjects = RNObjects;
         }
@@ -23121,23 +23121,23 @@ namespace SCLog.RightNowServiceReference {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:messages.ws.rightnow.com/v1_2", Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("RNObjects", IsNullable=false)]
-        public SCLog.RightNowServiceReference.RNObject[] RNObjectsResult;
+        public ServiceVentures.RightNowServiceReference.RNObject[] RNObjectsResult;
         
         public ConvertObjectToGenericResponse() {
         }
         
-        public ConvertObjectToGenericResponse(SCLog.RightNowServiceReference.RNObject[] RNObjectsResult) {
+        public ConvertObjectToGenericResponse(ServiceVentures.RightNowServiceReference.RNObject[] RNObjectsResult) {
             this.RNObjectsResult = RNObjectsResult;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface RightNowSyncPortChannel : SCLog.RightNowServiceReference.RightNowSyncPort, System.ServiceModel.IClientChannel {
+    public interface RightNowSyncPortChannel : ServiceVentures.RightNowServiceReference.RightNowSyncPort, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class RightNowSyncPortClient : System.ServiceModel.ClientBase<SCLog.RightNowServiceReference.RightNowSyncPort>, SCLog.RightNowServiceReference.RightNowSyncPort {
+    public partial class RightNowSyncPortClient : System.ServiceModel.ClientBase<ServiceVentures.RightNowServiceReference.RightNowSyncPort>, ServiceVentures.RightNowServiceReference.RightNowSyncPort {
         
         public RightNowSyncPortClient() {
         }
@@ -23159,169 +23159,169 @@ namespace SCLog.RightNowServiceReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.CreateResponse SCLog.RightNowServiceReference.RightNowSyncPort.Create(SCLog.RightNowServiceReference.CreateRequest request) {
+        ServiceVentures.RightNowServiceReference.CreateResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.Create(ServiceVentures.RightNowServiceReference.CreateRequest request) {
             return base.Channel.Create(request);
         }
         
-        public SCLog.RightNowServiceReference.RNObject[] Create(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.CreateProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.CreateRequest inValue = new SCLog.RightNowServiceReference.CreateRequest();
+        public ServiceVentures.RightNowServiceReference.RNObject[] Create(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.CreateProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.CreateRequest inValue = new ServiceVentures.RightNowServiceReference.CreateRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            SCLog.RightNowServiceReference.CreateResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).Create(inValue);
+            ServiceVentures.RightNowServiceReference.CreateResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).Create(inValue);
             return retVal.RNObjectsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.CreateResponse> SCLog.RightNowServiceReference.RightNowSyncPort.CreateAsync(SCLog.RightNowServiceReference.CreateRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.CreateResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.CreateAsync(ServiceVentures.RightNowServiceReference.CreateRequest request) {
             return base.Channel.CreateAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.CreateResponse> CreateAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.CreateProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.CreateRequest inValue = new SCLog.RightNowServiceReference.CreateRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.CreateResponse> CreateAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.CreateProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.CreateRequest inValue = new ServiceVentures.RightNowServiceReference.CreateRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).CreateAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).CreateAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.GetResponse SCLog.RightNowServiceReference.RightNowSyncPort.Get(SCLog.RightNowServiceReference.GetRequest request) {
+        ServiceVentures.RightNowServiceReference.GetResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.Get(ServiceVentures.RightNowServiceReference.GetRequest request) {
             return base.Channel.Get(request);
         }
         
-        public SCLog.RightNowServiceReference.RNObject[] Get(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.GetProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.GetRequest inValue = new SCLog.RightNowServiceReference.GetRequest();
+        public ServiceVentures.RightNowServiceReference.RNObject[] Get(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.GetProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.GetRequest inValue = new ServiceVentures.RightNowServiceReference.GetRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            SCLog.RightNowServiceReference.GetResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).Get(inValue);
+            ServiceVentures.RightNowServiceReference.GetResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).Get(inValue);
             return retVal.RNObjectsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetResponse> SCLog.RightNowServiceReference.RightNowSyncPort.GetAsync(SCLog.RightNowServiceReference.GetRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.GetAsync(ServiceVentures.RightNowServiceReference.GetRequest request) {
             return base.Channel.GetAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetResponse> GetAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.GetProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.GetRequest inValue = new SCLog.RightNowServiceReference.GetRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetResponse> GetAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.GetProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.GetRequest inValue = new ServiceVentures.RightNowServiceReference.GetRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).GetAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).GetAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.UpdateResponse SCLog.RightNowServiceReference.RightNowSyncPort.Update(SCLog.RightNowServiceReference.UpdateRequest request) {
+        ServiceVentures.RightNowServiceReference.UpdateResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.Update(ServiceVentures.RightNowServiceReference.UpdateRequest request) {
             return base.Channel.Update(request);
         }
         
-        public void Update(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.UpdateProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.UpdateRequest inValue = new SCLog.RightNowServiceReference.UpdateRequest();
+        public void Update(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.UpdateProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.UpdateRequest inValue = new ServiceVentures.RightNowServiceReference.UpdateRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            SCLog.RightNowServiceReference.UpdateResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).Update(inValue);
+            ServiceVentures.RightNowServiceReference.UpdateResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).Update(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.UpdateResponse> SCLog.RightNowServiceReference.RightNowSyncPort.UpdateAsync(SCLog.RightNowServiceReference.UpdateRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.UpdateResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.UpdateAsync(ServiceVentures.RightNowServiceReference.UpdateRequest request) {
             return base.Channel.UpdateAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.UpdateResponse> UpdateAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.UpdateProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.UpdateRequest inValue = new SCLog.RightNowServiceReference.UpdateRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.UpdateResponse> UpdateAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.UpdateProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.UpdateRequest inValue = new ServiceVentures.RightNowServiceReference.UpdateRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).UpdateAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).UpdateAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.DestroyResponse SCLog.RightNowServiceReference.RightNowSyncPort.Destroy(SCLog.RightNowServiceReference.DestroyRequest request) {
+        ServiceVentures.RightNowServiceReference.DestroyResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.Destroy(ServiceVentures.RightNowServiceReference.DestroyRequest request) {
             return base.Channel.Destroy(request);
         }
         
-        public void Destroy(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.DestroyProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.DestroyRequest inValue = new SCLog.RightNowServiceReference.DestroyRequest();
+        public void Destroy(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.DestroyProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.DestroyRequest inValue = new ServiceVentures.RightNowServiceReference.DestroyRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            SCLog.RightNowServiceReference.DestroyResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).Destroy(inValue);
+            ServiceVentures.RightNowServiceReference.DestroyResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).Destroy(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.DestroyResponse> SCLog.RightNowServiceReference.RightNowSyncPort.DestroyAsync(SCLog.RightNowServiceReference.DestroyRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.DestroyResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.DestroyAsync(ServiceVentures.RightNowServiceReference.DestroyRequest request) {
             return base.Channel.DestroyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.DestroyResponse> DestroyAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.DestroyProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.DestroyRequest inValue = new SCLog.RightNowServiceReference.DestroyRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.DestroyResponse> DestroyAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.DestroyProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.DestroyRequest inValue = new ServiceVentures.RightNowServiceReference.DestroyRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).DestroyAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).DestroyAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.QueryObjectsResponse SCLog.RightNowServiceReference.RightNowSyncPort.QueryObjects(SCLog.RightNowServiceReference.QueryObjectsRequest request) {
+        ServiceVentures.RightNowServiceReference.QueryObjectsResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.QueryObjects(ServiceVentures.RightNowServiceReference.QueryObjectsRequest request) {
             return base.Channel.QueryObjects(request);
         }
         
-        public SCLog.RightNowServiceReference.QueryResultData[] QueryObjects(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, SCLog.RightNowServiceReference.RNObject[] ObjectTemplates, int PageSize) {
-            SCLog.RightNowServiceReference.QueryObjectsRequest inValue = new SCLog.RightNowServiceReference.QueryObjectsRequest();
+        public ServiceVentures.RightNowServiceReference.QueryResultData[] QueryObjects(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, ServiceVentures.RightNowServiceReference.RNObject[] ObjectTemplates, int PageSize) {
+            ServiceVentures.RightNowServiceReference.QueryObjectsRequest inValue = new ServiceVentures.RightNowServiceReference.QueryObjectsRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.Query = Query;
             inValue.ObjectTemplates = ObjectTemplates;
             inValue.PageSize = PageSize;
-            SCLog.RightNowServiceReference.QueryObjectsResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).QueryObjects(inValue);
+            ServiceVentures.RightNowServiceReference.QueryObjectsResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).QueryObjects(inValue);
             return retVal.Result;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.QueryObjectsResponse> SCLog.RightNowServiceReference.RightNowSyncPort.QueryObjectsAsync(SCLog.RightNowServiceReference.QueryObjectsRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.QueryObjectsResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.QueryObjectsAsync(ServiceVentures.RightNowServiceReference.QueryObjectsRequest request) {
             return base.Channel.QueryObjectsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.QueryObjectsResponse> QueryObjectsAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, SCLog.RightNowServiceReference.RNObject[] ObjectTemplates, int PageSize) {
-            SCLog.RightNowServiceReference.QueryObjectsRequest inValue = new SCLog.RightNowServiceReference.QueryObjectsRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.QueryObjectsResponse> QueryObjectsAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, ServiceVentures.RightNowServiceReference.RNObject[] ObjectTemplates, int PageSize) {
+            ServiceVentures.RightNowServiceReference.QueryObjectsRequest inValue = new ServiceVentures.RightNowServiceReference.QueryObjectsRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.Query = Query;
             inValue.ObjectTemplates = ObjectTemplates;
             inValue.PageSize = PageSize;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).QueryObjectsAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).QueryObjectsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.QueryCSVResponse SCLog.RightNowServiceReference.RightNowSyncPort.QueryCSV(SCLog.RightNowServiceReference.QueryCSVRequest request) {
+        ServiceVentures.RightNowServiceReference.QueryCSVResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.QueryCSV(ServiceVentures.RightNowServiceReference.QueryCSVRequest request) {
             return base.Channel.QueryCSV(request);
         }
         
-        public SCLog.RightNowServiceReference.CSVTableSet QueryCSV(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, int PageSize, string Delimiter, bool ReturnRawResult, bool DisableMTOM, out byte[] FileData) {
-            SCLog.RightNowServiceReference.QueryCSVRequest inValue = new SCLog.RightNowServiceReference.QueryCSVRequest();
+        public ServiceVentures.RightNowServiceReference.CSVTableSet QueryCSV(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, int PageSize, string Delimiter, bool ReturnRawResult, bool DisableMTOM, out byte[] FileData) {
+            ServiceVentures.RightNowServiceReference.QueryCSVRequest inValue = new ServiceVentures.RightNowServiceReference.QueryCSVRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.Query = Query;
             inValue.PageSize = PageSize;
             inValue.Delimiter = Delimiter;
             inValue.ReturnRawResult = ReturnRawResult;
             inValue.DisableMTOM = DisableMTOM;
-            SCLog.RightNowServiceReference.QueryCSVResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).QueryCSV(inValue);
+            ServiceVentures.RightNowServiceReference.QueryCSVResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).QueryCSV(inValue);
             FileData = retVal.FileData;
             return retVal.CSVTableSet;
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.QueryCSVResponse> QueryCSVAsync(SCLog.RightNowServiceReference.QueryCSVRequest request) {
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.QueryCSVResponse> QueryCSVAsync(ServiceVentures.RightNowServiceReference.QueryCSVRequest request) {
             return base.Channel.QueryCSVAsync(request);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.RunAnalyticsReportResponse SCLog.RightNowServiceReference.RightNowSyncPort.RunAnalyticsReport(SCLog.RightNowServiceReference.RunAnalyticsReportRequest request) {
+        ServiceVentures.RightNowServiceReference.RunAnalyticsReportResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.RunAnalyticsReport(ServiceVentures.RightNowServiceReference.RunAnalyticsReportRequest request) {
             return base.Channel.RunAnalyticsReport(request);
         }
         
-        public SCLog.RightNowServiceReference.CSVTableSet RunAnalyticsReport(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.AnalyticsReport AnalyticsReport, int Limit, int Start, string Delimiter, bool ReturnRawResult, bool DisableMTOM, out byte[] FileData) {
-            SCLog.RightNowServiceReference.RunAnalyticsReportRequest inValue = new SCLog.RightNowServiceReference.RunAnalyticsReportRequest();
+        public ServiceVentures.RightNowServiceReference.CSVTableSet RunAnalyticsReport(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.AnalyticsReport AnalyticsReport, int Limit, int Start, string Delimiter, bool ReturnRawResult, bool DisableMTOM, out byte[] FileData) {
+            ServiceVentures.RightNowServiceReference.RunAnalyticsReportRequest inValue = new ServiceVentures.RightNowServiceReference.RunAnalyticsReportRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.AnalyticsReport = AnalyticsReport;
             inValue.Limit = Limit;
@@ -23329,103 +23329,103 @@ namespace SCLog.RightNowServiceReference {
             inValue.Delimiter = Delimiter;
             inValue.ReturnRawResult = ReturnRawResult;
             inValue.DisableMTOM = DisableMTOM;
-            SCLog.RightNowServiceReference.RunAnalyticsReportResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).RunAnalyticsReport(inValue);
+            ServiceVentures.RightNowServiceReference.RunAnalyticsReportResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).RunAnalyticsReport(inValue);
             FileData = retVal.FileData;
             return retVal.CSVTableSet;
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.RunAnalyticsReportResponse> RunAnalyticsReportAsync(SCLog.RightNowServiceReference.RunAnalyticsReportRequest request) {
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.RunAnalyticsReportResponse> RunAnalyticsReportAsync(ServiceVentures.RightNowServiceReference.RunAnalyticsReportRequest request) {
             return base.Channel.RunAnalyticsReportAsync(request);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.ExecuteMarketingFlowResponse SCLog.RightNowServiceReference.RightNowSyncPort.ExecuteMarketingFlow(SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest request) {
+        ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.ExecuteMarketingFlow(ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest request) {
             return base.Channel.ExecuteMarketingFlow(request);
         }
         
-        public void ExecuteMarketingFlow(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID, SCLog.RightNowServiceReference.ID CampaignID, string EntryPoint) {
-            SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest inValue = new SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest();
+        public void ExecuteMarketingFlow(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID, ServiceVentures.RightNowServiceReference.ID CampaignID, string EntryPoint) {
+            ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest inValue = new ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ContactID = ContactID;
             inValue.CampaignID = CampaignID;
             inValue.EntryPoint = EntryPoint;
-            SCLog.RightNowServiceReference.ExecuteMarketingFlowResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).ExecuteMarketingFlow(inValue);
+            ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).ExecuteMarketingFlow(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ExecuteMarketingFlowResponse> SCLog.RightNowServiceReference.RightNowSyncPort.ExecuteMarketingFlowAsync(SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.ExecuteMarketingFlowAsync(ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest request) {
             return base.Channel.ExecuteMarketingFlowAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ExecuteMarketingFlowResponse> ExecuteMarketingFlowAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID, SCLog.RightNowServiceReference.ID CampaignID, string EntryPoint) {
-            SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest inValue = new SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowResponse> ExecuteMarketingFlowAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID, ServiceVentures.RightNowServiceReference.ID CampaignID, string EntryPoint) {
+            ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest inValue = new ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ContactID = ContactID;
             inValue.CampaignID = CampaignID;
             inValue.EntryPoint = EntryPoint;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).ExecuteMarketingFlowAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).ExecuteMarketingFlowAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.GetFileDataResponse SCLog.RightNowServiceReference.RightNowSyncPort.GetFileData(SCLog.RightNowServiceReference.GetFileDataRequest request) {
+        ServiceVentures.RightNowServiceReference.GetFileDataResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.GetFileData(ServiceVentures.RightNowServiceReference.GetFileDataRequest request) {
             return base.Channel.GetFileData(request);
         }
         
-        public byte[] GetFileData(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject RNObject, SCLog.RightNowServiceReference.ID FileID, bool DisableMTOM) {
-            SCLog.RightNowServiceReference.GetFileDataRequest inValue = new SCLog.RightNowServiceReference.GetFileDataRequest();
+        public byte[] GetFileData(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject RNObject, ServiceVentures.RightNowServiceReference.ID FileID, bool DisableMTOM) {
+            ServiceVentures.RightNowServiceReference.GetFileDataRequest inValue = new ServiceVentures.RightNowServiceReference.GetFileDataRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObject = RNObject;
             inValue.FileID = FileID;
             inValue.DisableMTOM = DisableMTOM;
-            SCLog.RightNowServiceReference.GetFileDataResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).GetFileData(inValue);
+            ServiceVentures.RightNowServiceReference.GetFileDataResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).GetFileData(inValue);
             return retVal.FileData;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetFileDataResponse> SCLog.RightNowServiceReference.RightNowSyncPort.GetFileDataAsync(SCLog.RightNowServiceReference.GetFileDataRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetFileDataResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.GetFileDataAsync(ServiceVentures.RightNowServiceReference.GetFileDataRequest request) {
             return base.Channel.GetFileDataAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetFileDataResponse> GetFileDataAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject RNObject, SCLog.RightNowServiceReference.ID FileID, bool DisableMTOM) {
-            SCLog.RightNowServiceReference.GetFileDataRequest inValue = new SCLog.RightNowServiceReference.GetFileDataRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetFileDataResponse> GetFileDataAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject RNObject, ServiceVentures.RightNowServiceReference.ID FileID, bool DisableMTOM) {
+            ServiceVentures.RightNowServiceReference.GetFileDataRequest inValue = new ServiceVentures.RightNowServiceReference.GetFileDataRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObject = RNObject;
             inValue.FileID = FileID;
             inValue.DisableMTOM = DisableMTOM;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).GetFileDataAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).GetFileDataAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.ResetContactPasswordResponse SCLog.RightNowServiceReference.RightNowSyncPort.ResetContactPassword(SCLog.RightNowServiceReference.ResetContactPasswordRequest request) {
+        ServiceVentures.RightNowServiceReference.ResetContactPasswordResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.ResetContactPassword(ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest request) {
             return base.Channel.ResetContactPassword(request);
         }
         
-        public void ResetContactPassword(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID) {
-            SCLog.RightNowServiceReference.ResetContactPasswordRequest inValue = new SCLog.RightNowServiceReference.ResetContactPasswordRequest();
+        public void ResetContactPassword(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID) {
+            ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest inValue = new ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ContactID = ContactID;
-            SCLog.RightNowServiceReference.ResetContactPasswordResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).ResetContactPassword(inValue);
+            ServiceVentures.RightNowServiceReference.ResetContactPasswordResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).ResetContactPassword(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ResetContactPasswordResponse> SCLog.RightNowServiceReference.RightNowSyncPort.ResetContactPasswordAsync(SCLog.RightNowServiceReference.ResetContactPasswordRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ResetContactPasswordResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.ResetContactPasswordAsync(ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest request) {
             return base.Channel.ResetContactPasswordAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ResetContactPasswordResponse> ResetContactPasswordAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID) {
-            SCLog.RightNowServiceReference.ResetContactPasswordRequest inValue = new SCLog.RightNowServiceReference.ResetContactPasswordRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ResetContactPasswordResponse> ResetContactPasswordAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID) {
+            ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest inValue = new ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ContactID = ContactID;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).ResetContactPasswordAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).ResetContactPasswordAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.SendMailingToContactResponse SCLog.RightNowServiceReference.RightNowSyncPort.SendMailingToContact(SCLog.RightNowServiceReference.SendMailingToContactRequest request) {
+        ServiceVentures.RightNowServiceReference.SendMailingToContactResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.SendMailingToContact(ServiceVentures.RightNowServiceReference.SendMailingToContactRequest request) {
             return base.Channel.SendMailingToContact(request);
         }
         
-        public void SendMailingToContact(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID, SCLog.RightNowServiceReference.ID MailingID, System.Nullable<System.DateTime> ScheduledTime, SCLog.RightNowServiceReference.ID IncidentID, SCLog.RightNowServiceReference.ID OpportunityID, SCLog.RightNowServiceReference.ID ChatID) {
-            SCLog.RightNowServiceReference.SendMailingToContactRequest inValue = new SCLog.RightNowServiceReference.SendMailingToContactRequest();
+        public void SendMailingToContact(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID, ServiceVentures.RightNowServiceReference.ID MailingID, System.Nullable<System.DateTime> ScheduledTime, ServiceVentures.RightNowServiceReference.ID IncidentID, ServiceVentures.RightNowServiceReference.ID OpportunityID, ServiceVentures.RightNowServiceReference.ID ChatID) {
+            ServiceVentures.RightNowServiceReference.SendMailingToContactRequest inValue = new ServiceVentures.RightNowServiceReference.SendMailingToContactRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ContactID = ContactID;
             inValue.MailingID = MailingID;
@@ -23433,16 +23433,16 @@ namespace SCLog.RightNowServiceReference {
             inValue.IncidentID = IncidentID;
             inValue.OpportunityID = OpportunityID;
             inValue.ChatID = ChatID;
-            SCLog.RightNowServiceReference.SendMailingToContactResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).SendMailingToContact(inValue);
+            ServiceVentures.RightNowServiceReference.SendMailingToContactResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).SendMailingToContact(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.SendMailingToContactResponse> SCLog.RightNowServiceReference.RightNowSyncPort.SendMailingToContactAsync(SCLog.RightNowServiceReference.SendMailingToContactRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.SendMailingToContactResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.SendMailingToContactAsync(ServiceVentures.RightNowServiceReference.SendMailingToContactRequest request) {
             return base.Channel.SendMailingToContactAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.SendMailingToContactResponse> SendMailingToContactAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID, SCLog.RightNowServiceReference.ID MailingID, System.Nullable<System.DateTime> ScheduledTime, SCLog.RightNowServiceReference.ID IncidentID, SCLog.RightNowServiceReference.ID OpportunityID, SCLog.RightNowServiceReference.ID ChatID) {
-            SCLog.RightNowServiceReference.SendMailingToContactRequest inValue = new SCLog.RightNowServiceReference.SendMailingToContactRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.SendMailingToContactResponse> SendMailingToContactAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID, ServiceVentures.RightNowServiceReference.ID MailingID, System.Nullable<System.DateTime> ScheduledTime, ServiceVentures.RightNowServiceReference.ID IncidentID, ServiceVentures.RightNowServiceReference.ID OpportunityID, ServiceVentures.RightNowServiceReference.ID ChatID) {
+            ServiceVentures.RightNowServiceReference.SendMailingToContactRequest inValue = new ServiceVentures.RightNowServiceReference.SendMailingToContactRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ContactID = ContactID;
             inValue.MailingID = MailingID;
@@ -23450,235 +23450,235 @@ namespace SCLog.RightNowServiceReference {
             inValue.IncidentID = IncidentID;
             inValue.OpportunityID = OpportunityID;
             inValue.ChatID = ChatID;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).SendMailingToContactAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).SendMailingToContactAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.TransferSubObjectsResponse SCLog.RightNowServiceReference.RightNowSyncPort.TransferSubObjects(SCLog.RightNowServiceReference.TransferSubObjectsRequest request) {
+        ServiceVentures.RightNowServiceReference.TransferSubObjectsResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.TransferSubObjects(ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest request) {
             return base.Channel.TransferSubObjects(request);
         }
         
-        public void TransferSubObjects(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject DestinationRNObject, SCLog.RightNowServiceReference.RNObject[] SourceRNObjects) {
-            SCLog.RightNowServiceReference.TransferSubObjectsRequest inValue = new SCLog.RightNowServiceReference.TransferSubObjectsRequest();
+        public void TransferSubObjects(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject DestinationRNObject, ServiceVentures.RightNowServiceReference.RNObject[] SourceRNObjects) {
+            ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest inValue = new ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.DestinationRNObject = DestinationRNObject;
             inValue.SourceRNObjects = SourceRNObjects;
-            SCLog.RightNowServiceReference.TransferSubObjectsResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).TransferSubObjects(inValue);
+            ServiceVentures.RightNowServiceReference.TransferSubObjectsResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).TransferSubObjects(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.TransferSubObjectsResponse> SCLog.RightNowServiceReference.RightNowSyncPort.TransferSubObjectsAsync(SCLog.RightNowServiceReference.TransferSubObjectsRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.TransferSubObjectsResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.TransferSubObjectsAsync(ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest request) {
             return base.Channel.TransferSubObjectsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.TransferSubObjectsResponse> TransferSubObjectsAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject DestinationRNObject, SCLog.RightNowServiceReference.RNObject[] SourceRNObjects) {
-            SCLog.RightNowServiceReference.TransferSubObjectsRequest inValue = new SCLog.RightNowServiceReference.TransferSubObjectsRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.TransferSubObjectsResponse> TransferSubObjectsAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject DestinationRNObject, ServiceVentures.RightNowServiceReference.RNObject[] SourceRNObjects) {
+            ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest inValue = new ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.DestinationRNObject = DestinationRNObject;
             inValue.SourceRNObjects = SourceRNObjects;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).TransferSubObjectsAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).TransferSubObjectsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.BatchResponse SCLog.RightNowServiceReference.RightNowSyncPort.Batch(SCLog.RightNowServiceReference.BatchRequest request) {
+        ServiceVentures.RightNowServiceReference.BatchResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.Batch(ServiceVentures.RightNowServiceReference.BatchRequest request) {
             return base.Channel.Batch(request);
         }
         
-        public SCLog.RightNowServiceReference.BatchResponseItem[] Batch(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.BatchRequestItem[] BatchRequestItem) {
-            SCLog.RightNowServiceReference.BatchRequest inValue = new SCLog.RightNowServiceReference.BatchRequest();
+        public ServiceVentures.RightNowServiceReference.BatchResponseItem[] Batch(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.BatchRequestItem[] BatchRequestItem) {
+            ServiceVentures.RightNowServiceReference.BatchRequest inValue = new ServiceVentures.RightNowServiceReference.BatchRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.BatchRequestItem = BatchRequestItem;
-            SCLog.RightNowServiceReference.BatchResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).Batch(inValue);
+            ServiceVentures.RightNowServiceReference.BatchResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).Batch(inValue);
             return retVal.BatchResponseItem;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.BatchResponse> SCLog.RightNowServiceReference.RightNowSyncPort.BatchAsync(SCLog.RightNowServiceReference.BatchRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.BatchResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.BatchAsync(ServiceVentures.RightNowServiceReference.BatchRequest request) {
             return base.Channel.BatchAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.BatchResponse> BatchAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.BatchRequestItem[] BatchRequestItem) {
-            SCLog.RightNowServiceReference.BatchRequest inValue = new SCLog.RightNowServiceReference.BatchRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.BatchResponse> BatchAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.BatchRequestItem[] BatchRequestItem) {
+            ServiceVentures.RightNowServiceReference.BatchRequest inValue = new ServiceVentures.RightNowServiceReference.BatchRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.BatchRequestItem = BatchRequestItem;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).BatchAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).BatchAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.GetMetaDataResponse SCLog.RightNowServiceReference.RightNowSyncPort.GetMetaData(SCLog.RightNowServiceReference.GetMetaDataRequest request) {
+        ServiceVentures.RightNowServiceReference.GetMetaDataResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.GetMetaData(ServiceVentures.RightNowServiceReference.GetMetaDataRequest request) {
             return base.Channel.GetMetaData(request);
         }
         
-        public SCLog.RightNowServiceReference.MetaDataClass[] GetMetaData(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
-            SCLog.RightNowServiceReference.GetMetaDataRequest inValue = new SCLog.RightNowServiceReference.GetMetaDataRequest();
+        public ServiceVentures.RightNowServiceReference.MetaDataClass[] GetMetaData(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
+            ServiceVentures.RightNowServiceReference.GetMetaDataRequest inValue = new ServiceVentures.RightNowServiceReference.GetMetaDataRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
-            SCLog.RightNowServiceReference.GetMetaDataResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).GetMetaData(inValue);
+            ServiceVentures.RightNowServiceReference.GetMetaDataResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).GetMetaData(inValue);
             return retVal.MetaDataClass;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataResponse> SCLog.RightNowServiceReference.RightNowSyncPort.GetMetaDataAsync(SCLog.RightNowServiceReference.GetMetaDataRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.GetMetaDataAsync(ServiceVentures.RightNowServiceReference.GetMetaDataRequest request) {
             return base.Channel.GetMetaDataAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataResponse> GetMetaDataAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
-            SCLog.RightNowServiceReference.GetMetaDataRequest inValue = new SCLog.RightNowServiceReference.GetMetaDataRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataResponse> GetMetaDataAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
+            ServiceVentures.RightNowServiceReference.GetMetaDataRequest inValue = new ServiceVentures.RightNowServiceReference.GetMetaDataRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).GetMetaDataAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).GetMetaDataAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.GetMetaDataForClassResponse SCLog.RightNowServiceReference.RightNowSyncPort.GetMetaDataForClass(SCLog.RightNowServiceReference.GetMetaDataForClassRequest request) {
+        ServiceVentures.RightNowServiceReference.GetMetaDataForClassResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.GetMetaDataForClass(ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest request) {
             return base.Channel.GetMetaDataForClass(request);
         }
         
-        public SCLog.RightNowServiceReference.MetaDataClass[] GetMetaDataForClass(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string[] ClassName, SCLog.RightNowServiceReference.RNObjectType[] QualifiedClassName, string[] MetaDataLink) {
-            SCLog.RightNowServiceReference.GetMetaDataForClassRequest inValue = new SCLog.RightNowServiceReference.GetMetaDataForClassRequest();
+        public ServiceVentures.RightNowServiceReference.MetaDataClass[] GetMetaDataForClass(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string[] ClassName, ServiceVentures.RightNowServiceReference.RNObjectType[] QualifiedClassName, string[] MetaDataLink) {
+            ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest inValue = new ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ClassName = ClassName;
             inValue.QualifiedClassName = QualifiedClassName;
             inValue.MetaDataLink = MetaDataLink;
-            SCLog.RightNowServiceReference.GetMetaDataForClassResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).GetMetaDataForClass(inValue);
+            ServiceVentures.RightNowServiceReference.GetMetaDataForClassResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).GetMetaDataForClass(inValue);
             return retVal.MetaDataClass;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataForClassResponse> SCLog.RightNowServiceReference.RightNowSyncPort.GetMetaDataForClassAsync(SCLog.RightNowServiceReference.GetMetaDataForClassRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataForClassResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.GetMetaDataForClassAsync(ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest request) {
             return base.Channel.GetMetaDataForClassAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataForClassResponse> GetMetaDataForClassAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string[] ClassName, SCLog.RightNowServiceReference.RNObjectType[] QualifiedClassName, string[] MetaDataLink) {
-            SCLog.RightNowServiceReference.GetMetaDataForClassRequest inValue = new SCLog.RightNowServiceReference.GetMetaDataForClassRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataForClassResponse> GetMetaDataForClassAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string[] ClassName, ServiceVentures.RightNowServiceReference.RNObjectType[] QualifiedClassName, string[] MetaDataLink) {
+            ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest inValue = new ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ClassName = ClassName;
             inValue.QualifiedClassName = QualifiedClassName;
             inValue.MetaDataLink = MetaDataLink;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).GetMetaDataForClassAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).GetMetaDataForClassAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeResponse SCLog.RightNowServiceReference.RightNowSyncPort.GetMetaDataLastChangeTime(SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request) {
+        ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.GetMetaDataLastChangeTime(ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request) {
             return base.Channel.GetMetaDataLastChangeTime(request);
         }
         
-        public System.DateTime GetMetaDataLastChangeTime(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
-            SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest inValue = new SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest();
+        public System.DateTime GetMetaDataLastChangeTime(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
+            ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest inValue = new ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
-            SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).GetMetaDataLastChangeTime(inValue);
+            ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).GetMetaDataLastChangeTime(inValue);
             return retVal.LastChangeDateTime;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeResponse> SCLog.RightNowServiceReference.RightNowSyncPort.GetMetaDataLastChangeTimeAsync(SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.GetMetaDataLastChangeTimeAsync(ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request) {
             return base.Channel.GetMetaDataLastChangeTimeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeResponse> GetMetaDataLastChangeTimeAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
-            SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest inValue = new SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeResponse> GetMetaDataLastChangeTimeAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
+            ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest inValue = new ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).GetMetaDataLastChangeTimeAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).GetMetaDataLastChangeTimeAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.GetValuesForNamedIDResponse SCLog.RightNowServiceReference.RightNowSyncPort.GetValuesForNamedID(SCLog.RightNowServiceReference.GetValuesForNamedIDRequest request) {
+        ServiceVentures.RightNowServiceReference.GetValuesForNamedIDResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.GetValuesForNamedID(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest request) {
             return base.Channel.GetValuesForNamedID(request);
         }
         
-        public SCLog.RightNowServiceReference.NamedID[] GetValuesForNamedID(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string PackageName, string FieldName) {
-            SCLog.RightNowServiceReference.GetValuesForNamedIDRequest inValue = new SCLog.RightNowServiceReference.GetValuesForNamedIDRequest();
+        public ServiceVentures.RightNowServiceReference.NamedID[] GetValuesForNamedID(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string PackageName, string FieldName) {
+            ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest inValue = new ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.PackageName = PackageName;
             inValue.FieldName = FieldName;
-            SCLog.RightNowServiceReference.GetValuesForNamedIDResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).GetValuesForNamedID(inValue);
+            ServiceVentures.RightNowServiceReference.GetValuesForNamedIDResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).GetValuesForNamedID(inValue);
             return retVal.Entry;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetValuesForNamedIDResponse> SCLog.RightNowServiceReference.RightNowSyncPort.GetValuesForNamedIDAsync(SCLog.RightNowServiceReference.GetValuesForNamedIDRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetValuesForNamedIDResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.GetValuesForNamedIDAsync(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest request) {
             return base.Channel.GetValuesForNamedIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetValuesForNamedIDResponse> GetValuesForNamedIDAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string PackageName, string FieldName) {
-            SCLog.RightNowServiceReference.GetValuesForNamedIDRequest inValue = new SCLog.RightNowServiceReference.GetValuesForNamedIDRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetValuesForNamedIDResponse> GetValuesForNamedIDAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string PackageName, string FieldName) {
+            ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest inValue = new ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.PackageName = PackageName;
             inValue.FieldName = FieldName;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).GetValuesForNamedIDAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).GetValuesForNamedIDAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse SCLog.RightNowServiceReference.RightNowSyncPort.GetValuesForNamedIDHierarchy(SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request) {
+        ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.GetValuesForNamedIDHierarchy(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request) {
             return base.Channel.GetValuesForNamedIDHierarchy(request);
         }
         
-        public SCLog.RightNowServiceReference.NamedIDWithParent[] GetValuesForNamedIDHierarchy(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string FieldName) {
-            SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest inValue = new SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest();
+        public ServiceVentures.RightNowServiceReference.NamedIDWithParent[] GetValuesForNamedIDHierarchy(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string FieldName) {
+            ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest inValue = new ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.FieldName = FieldName;
-            SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).GetValuesForNamedIDHierarchy(inValue);
+            ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).GetValuesForNamedIDHierarchy(inValue);
             return retVal.Entry;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse> SCLog.RightNowServiceReference.RightNowSyncPort.GetValuesForNamedIDHierarchyAsync(SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.GetValuesForNamedIDHierarchyAsync(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request) {
             return base.Channel.GetValuesForNamedIDHierarchyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse> GetValuesForNamedIDHierarchyAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string FieldName) {
-            SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest inValue = new SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse> GetValuesForNamedIDHierarchyAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string FieldName) {
+            ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest inValue = new ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.FieldName = FieldName;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).GetValuesForNamedIDHierarchyAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).GetValuesForNamedIDHierarchyAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.ConvertGenericToObjectResponse SCLog.RightNowServiceReference.RightNowSyncPort.ConvertGenericToObject(SCLog.RightNowServiceReference.ConvertGenericToObjectRequest request) {
+        ServiceVentures.RightNowServiceReference.ConvertGenericToObjectResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.ConvertGenericToObject(ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest request) {
             return base.Channel.ConvertGenericToObject(request);
         }
         
-        public SCLog.RightNowServiceReference.RNObject[] ConvertGenericToObject(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects) {
-            SCLog.RightNowServiceReference.ConvertGenericToObjectRequest inValue = new SCLog.RightNowServiceReference.ConvertGenericToObjectRequest();
+        public ServiceVentures.RightNowServiceReference.RNObject[] ConvertGenericToObject(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects) {
+            ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest inValue = new ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
-            SCLog.RightNowServiceReference.ConvertGenericToObjectResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).ConvertGenericToObject(inValue);
+            ServiceVentures.RightNowServiceReference.ConvertGenericToObjectResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).ConvertGenericToObject(inValue);
             return retVal.RNObjectsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ConvertGenericToObjectResponse> SCLog.RightNowServiceReference.RightNowSyncPort.ConvertGenericToObjectAsync(SCLog.RightNowServiceReference.ConvertGenericToObjectRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ConvertGenericToObjectResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.ConvertGenericToObjectAsync(ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest request) {
             return base.Channel.ConvertGenericToObjectAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ConvertGenericToObjectResponse> ConvertGenericToObjectAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects) {
-            SCLog.RightNowServiceReference.ConvertGenericToObjectRequest inValue = new SCLog.RightNowServiceReference.ConvertGenericToObjectRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ConvertGenericToObjectResponse> ConvertGenericToObjectAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects) {
+            ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest inValue = new ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).ConvertGenericToObjectAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).ConvertGenericToObjectAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.ConvertObjectToGenericResponse SCLog.RightNowServiceReference.RightNowSyncPort.ConvertObjectToGeneric(SCLog.RightNowServiceReference.ConvertObjectToGenericRequest request) {
+        ServiceVentures.RightNowServiceReference.ConvertObjectToGenericResponse ServiceVentures.RightNowServiceReference.RightNowSyncPort.ConvertObjectToGeneric(ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest request) {
             return base.Channel.ConvertObjectToGeneric(request);
         }
         
-        public SCLog.RightNowServiceReference.RNObject[] ConvertObjectToGeneric(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects) {
-            SCLog.RightNowServiceReference.ConvertObjectToGenericRequest inValue = new SCLog.RightNowServiceReference.ConvertObjectToGenericRequest();
+        public ServiceVentures.RightNowServiceReference.RNObject[] ConvertObjectToGeneric(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects) {
+            ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest inValue = new ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
-            SCLog.RightNowServiceReference.ConvertObjectToGenericResponse retVal = ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).ConvertObjectToGeneric(inValue);
+            ServiceVentures.RightNowServiceReference.ConvertObjectToGenericResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).ConvertObjectToGeneric(inValue);
             return retVal.RNObjectsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ConvertObjectToGenericResponse> SCLog.RightNowServiceReference.RightNowSyncPort.ConvertObjectToGenericAsync(SCLog.RightNowServiceReference.ConvertObjectToGenericRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ConvertObjectToGenericResponse> ServiceVentures.RightNowServiceReference.RightNowSyncPort.ConvertObjectToGenericAsync(ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest request) {
             return base.Channel.ConvertObjectToGenericAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ConvertObjectToGenericResponse> ConvertObjectToGenericAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects) {
-            SCLog.RightNowServiceReference.ConvertObjectToGenericRequest inValue = new SCLog.RightNowServiceReference.ConvertObjectToGenericRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ConvertObjectToGenericResponse> ConvertObjectToGenericAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects) {
+            ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest inValue = new ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
-            return ((SCLog.RightNowServiceReference.RightNowSyncPort)(this)).ConvertObjectToGenericAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowSyncPort)(this)).ConvertObjectToGenericAsync(inValue);
         }
     }
     
@@ -23688,304 +23688,304 @@ namespace SCLog.RightNowServiceReference {
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message CreateRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:CreateRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:CreateResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.CreateResponse Create(SCLog.RightNowServiceReference.CreateRequest request);
+        ServiceVentures.RightNowServiceReference.CreateResponse Create(ServiceVentures.RightNowServiceReference.CreateRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:CreateRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:CreateResponse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.CreateResponse> CreateAsync(SCLog.RightNowServiceReference.CreateRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.CreateResponse> CreateAsync(ServiceVentures.RightNowServiceReference.CreateRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message GetRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.GetResponse Get(SCLog.RightNowServiceReference.GetRequest request);
+        ServiceVentures.RightNowServiceReference.GetResponse Get(ServiceVentures.RightNowServiceReference.GetRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetResponse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetResponse> GetAsync(SCLog.RightNowServiceReference.GetRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetResponse> GetAsync(ServiceVentures.RightNowServiceReference.GetRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message UpdateRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:UpdateRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:UpdateResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.UpdateResponse Update(SCLog.RightNowServiceReference.UpdateRequest request);
+        ServiceVentures.RightNowServiceReference.UpdateResponse Update(ServiceVentures.RightNowServiceReference.UpdateRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:UpdateRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:UpdateResponse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.UpdateResponse> UpdateAsync(SCLog.RightNowServiceReference.UpdateRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.UpdateResponse> UpdateAsync(ServiceVentures.RightNowServiceReference.UpdateRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message DestroyRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:DestroyRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:DestroyResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.DestroyResponse Destroy(SCLog.RightNowServiceReference.DestroyRequest request);
+        ServiceVentures.RightNowServiceReference.DestroyResponse Destroy(ServiceVentures.RightNowServiceReference.DestroyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:DestroyRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:DestroyResponse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.DestroyResponse> DestroyAsync(SCLog.RightNowServiceReference.DestroyRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.DestroyResponse> DestroyAsync(ServiceVentures.RightNowServiceReference.DestroyRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message QueryObjectsRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:QueryObjectsRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:QueryObjectsResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.QueryObjectsResponse QueryObjects(SCLog.RightNowServiceReference.QueryObjectsRequest request);
+        ServiceVentures.RightNowServiceReference.QueryObjectsResponse QueryObjects(ServiceVentures.RightNowServiceReference.QueryObjectsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:QueryObjectsRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:QueryObjectsResponse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.QueryObjectsResponse> QueryObjectsAsync(SCLog.RightNowServiceReference.QueryObjectsRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.QueryObjectsResponse> QueryObjectsAsync(ServiceVentures.RightNowServiceReference.QueryObjectsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:QueryCSVRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:QueryCSVResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.QueryCSVResponse QueryCSV(SCLog.RightNowServiceReference.QueryCSVRequest request);
+        ServiceVentures.RightNowServiceReference.QueryCSVResponse QueryCSV(ServiceVentures.RightNowServiceReference.QueryCSVRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:QueryCSVRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:QueryCSVResponse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.QueryCSVResponse> QueryCSVAsync(SCLog.RightNowServiceReference.QueryCSVRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.QueryCSVResponse> QueryCSVAsync(ServiceVentures.RightNowServiceReference.QueryCSVRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:RunAnalyticsReportRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:RunAnalyticsReportResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.RunAnalyticsReportResponse RunAnalyticsReport(SCLog.RightNowServiceReference.RunAnalyticsReportRequest request);
+        ServiceVentures.RightNowServiceReference.RunAnalyticsReportResponse RunAnalyticsReport(ServiceVentures.RightNowServiceReference.RunAnalyticsReportRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:RunAnalyticsReportRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:RunAnalyticsReportResponse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.RunAnalyticsReportResponse> RunAnalyticsReportAsync(SCLog.RightNowServiceReference.RunAnalyticsReportRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.RunAnalyticsReportResponse> RunAnalyticsReportAsync(ServiceVentures.RightNowServiceReference.RunAnalyticsReportRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message ExecuteMarketingFlowRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ExecuteMarketingFlowRequest" +
             "", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ExecuteMarketingFlowRespons" +
             "e")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.ExecuteMarketingFlowResponse ExecuteMarketingFlow(SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest request);
+        ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowResponse ExecuteMarketingFlow(ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ExecuteMarketingFlowRequest" +
             "", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ExecuteMarketingFlowRespons" +
             "e")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ExecuteMarketingFlowResponse> ExecuteMarketingFlowAsync(SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowResponse> ExecuteMarketingFlowAsync(ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message GetFileDataRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetFileDataRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetFileDataResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.GetFileDataResponse GetFileData(SCLog.RightNowServiceReference.GetFileDataRequest request);
+        ServiceVentures.RightNowServiceReference.GetFileDataResponse GetFileData(ServiceVentures.RightNowServiceReference.GetFileDataRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetFileDataRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetFileDataResponse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetFileDataResponse> GetFileDataAsync(SCLog.RightNowServiceReference.GetFileDataRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetFileDataResponse> GetFileDataAsync(ServiceVentures.RightNowServiceReference.GetFileDataRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message ResetContactPasswordRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ResetContactPasswordRequest" +
             "", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ResetContactPasswordRespons" +
             "e")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.ResetContactPasswordResponse ResetContactPassword(SCLog.RightNowServiceReference.ResetContactPasswordRequest request);
+        ServiceVentures.RightNowServiceReference.ResetContactPasswordResponse ResetContactPassword(ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ResetContactPasswordRequest" +
             "", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ResetContactPasswordRespons" +
             "e")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ResetContactPasswordResponse> ResetContactPasswordAsync(SCLog.RightNowServiceReference.ResetContactPasswordRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ResetContactPasswordResponse> ResetContactPasswordAsync(ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message SendMailingToContactRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:SendMailingToContactRequest" +
             "", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:SendMailingToContactRespons" +
             "e")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.SendMailingToContactResponse SendMailingToContact(SCLog.RightNowServiceReference.SendMailingToContactRequest request);
+        ServiceVentures.RightNowServiceReference.SendMailingToContactResponse SendMailingToContact(ServiceVentures.RightNowServiceReference.SendMailingToContactRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:SendMailingToContactRequest" +
             "", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:SendMailingToContactRespons" +
             "e")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.SendMailingToContactResponse> SendMailingToContactAsync(SCLog.RightNowServiceReference.SendMailingToContactRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.SendMailingToContactResponse> SendMailingToContactAsync(ServiceVentures.RightNowServiceReference.SendMailingToContactRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message TransferSubObjectsRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:TransferSubObjectsRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:TransferSubObjectsResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.TransferSubObjectsResponse TransferSubObjects(SCLog.RightNowServiceReference.TransferSubObjectsRequest request);
+        ServiceVentures.RightNowServiceReference.TransferSubObjectsResponse TransferSubObjects(ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:TransferSubObjectsRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:TransferSubObjectsResponse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.TransferSubObjectsResponse> TransferSubObjectsAsync(SCLog.RightNowServiceReference.TransferSubObjectsRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.TransferSubObjectsResponse> TransferSubObjectsAsync(ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message BatchRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:BatchRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:BatchResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.BatchResponse Batch(SCLog.RightNowServiceReference.BatchRequest request);
+        ServiceVentures.RightNowServiceReference.BatchResponse Batch(ServiceVentures.RightNowServiceReference.BatchRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:BatchRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:BatchResponse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.BatchResponse> BatchAsync(SCLog.RightNowServiceReference.BatchRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.BatchResponse> BatchAsync(ServiceVentures.RightNowServiceReference.BatchRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message GetMetaDataRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetMetaDataRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetMetaDataResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.GetMetaDataResponse GetMetaData(SCLog.RightNowServiceReference.GetMetaDataRequest request);
+        ServiceVentures.RightNowServiceReference.GetMetaDataResponse GetMetaData(ServiceVentures.RightNowServiceReference.GetMetaDataRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetMetaDataRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetMetaDataResponse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataResponse> GetMetaDataAsync(SCLog.RightNowServiceReference.GetMetaDataRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataResponse> GetMetaDataAsync(ServiceVentures.RightNowServiceReference.GetMetaDataRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message GetMetaDataForClassRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetMetaDataForClassRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetMetaDataForClassResponse" +
             "")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.GetMetaDataForClassResponse GetMetaDataForClass(SCLog.RightNowServiceReference.GetMetaDataForClassRequest request);
+        ServiceVentures.RightNowServiceReference.GetMetaDataForClassResponse GetMetaDataForClass(ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetMetaDataForClassRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetMetaDataForClassResponse" +
             "")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataForClassResponse> GetMetaDataForClassAsync(SCLog.RightNowServiceReference.GetMetaDataForClassRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataForClassResponse> GetMetaDataForClassAsync(ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message GetMetaDataLastChangeTimeRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetMetaDataLastChangeTimeRe" +
             "quest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetMetaDataLastChangeTimeRe" +
             "sponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeResponse GetMetaDataLastChangeTime(SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request);
+        ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeResponse GetMetaDataLastChangeTime(ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetMetaDataLastChangeTimeRe" +
             "quest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetMetaDataLastChangeTimeRe" +
             "sponse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeResponse> GetMetaDataLastChangeTimeAsync(SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeResponse> GetMetaDataLastChangeTimeAsync(ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message GetValuesForNamedIDRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetValuesForNamedIDRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetValuesForNamedIDResponse" +
             "")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.GetValuesForNamedIDResponse GetValuesForNamedID(SCLog.RightNowServiceReference.GetValuesForNamedIDRequest request);
+        ServiceVentures.RightNowServiceReference.GetValuesForNamedIDResponse GetValuesForNamedID(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetValuesForNamedIDRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetValuesForNamedIDResponse" +
             "")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetValuesForNamedIDResponse> GetValuesForNamedIDAsync(SCLog.RightNowServiceReference.GetValuesForNamedIDRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetValuesForNamedIDResponse> GetValuesForNamedIDAsync(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message GetValuesForNamedIDHierarchyRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetValuesForNamedIDHierarch" +
             "yRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetValuesForNamedIDHierarch" +
             "yResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse GetValuesForNamedIDHierarchy(SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request);
+        ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse GetValuesForNamedIDHierarchy(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetValuesForNamedIDHierarch" +
             "yRequest", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:GetValuesForNamedIDHierarch" +
             "yResponse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse> GetValuesForNamedIDHierarchyAsync(SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse> GetValuesForNamedIDHierarchyAsync(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message ConvertGenericToObjectRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ConvertGenericToObjectReque" +
             "st", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ConvertGenericToObjectRespo" +
             "nse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.ConvertGenericToObjectResponse ConvertGenericToObject(SCLog.RightNowServiceReference.ConvertGenericToObjectRequest request);
+        ServiceVentures.RightNowServiceReference.ConvertGenericToObjectResponse ConvertGenericToObject(ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ConvertGenericToObjectReque" +
             "st", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ConvertGenericToObjectRespo" +
             "nse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ConvertGenericToObjectResponse> ConvertGenericToObjectAsync(SCLog.RightNowServiceReference.ConvertGenericToObjectRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ConvertGenericToObjectResponse> ConvertGenericToObjectAsync(ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace (urn:messages.ws.rightnow.com/v1_2) of message ConvertObjectToGenericRequest does not match the default value (urn:wsdl.ws.rightnow.com/v1_2)
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ConvertObjectToGenericReque" +
             "st", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ConvertObjectToGenericRespo" +
             "nse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
-        [System.ServiceModel.FaultContractAttribute(typeof(SCLog.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.RequestErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="RequestErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.ServerErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="ServerErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ServiceVentures.RightNowServiceReference.UnexpectedErrorFaultType), Action="http://www.w3.org/2005/08/addressing/soap/fault", Name="UnexpectedErrorFault", Namespace="urn:faults.ws.rightnow.com/v1_2")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RNFault))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnalyticsReportSearchFilter))]
-        SCLog.RightNowServiceReference.ConvertObjectToGenericResponse ConvertObjectToGeneric(SCLog.RightNowServiceReference.ConvertObjectToGenericRequest request);
+        ServiceVentures.RightNowServiceReference.ConvertObjectToGenericResponse ConvertObjectToGeneric(ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ConvertObjectToGenericReque" +
             "st", ReplyAction="urn:wsdl.ws.rightnow.com/v1_2:RightNowFedAuthSyncPort:ConvertObjectToGenericRespo" +
             "nse")]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ConvertObjectToGenericResponse> ConvertObjectToGenericAsync(SCLog.RightNowServiceReference.ConvertObjectToGenericRequest request);
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ConvertObjectToGenericResponse> ConvertObjectToGenericAsync(ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest request);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface RightNowFedAuthSyncPortChannel : SCLog.RightNowServiceReference.RightNowFedAuthSyncPort, System.ServiceModel.IClientChannel {
+    public interface RightNowFedAuthSyncPortChannel : ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class RightNowFedAuthSyncPortClient : System.ServiceModel.ClientBase<SCLog.RightNowServiceReference.RightNowFedAuthSyncPort>, SCLog.RightNowServiceReference.RightNowFedAuthSyncPort {
+    public partial class RightNowFedAuthSyncPortClient : System.ServiceModel.ClientBase<ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort>, ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort {
         
         public RightNowFedAuthSyncPortClient() {
         }
@@ -24007,169 +24007,169 @@ namespace SCLog.RightNowServiceReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.CreateResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.Create(SCLog.RightNowServiceReference.CreateRequest request) {
+        ServiceVentures.RightNowServiceReference.CreateResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.Create(ServiceVentures.RightNowServiceReference.CreateRequest request) {
             return base.Channel.Create(request);
         }
         
-        public SCLog.RightNowServiceReference.RNObject[] Create(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.CreateProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.CreateRequest inValue = new SCLog.RightNowServiceReference.CreateRequest();
+        public ServiceVentures.RightNowServiceReference.RNObject[] Create(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.CreateProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.CreateRequest inValue = new ServiceVentures.RightNowServiceReference.CreateRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            SCLog.RightNowServiceReference.CreateResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).Create(inValue);
+            ServiceVentures.RightNowServiceReference.CreateResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).Create(inValue);
             return retVal.RNObjectsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.CreateResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.CreateAsync(SCLog.RightNowServiceReference.CreateRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.CreateResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.CreateAsync(ServiceVentures.RightNowServiceReference.CreateRequest request) {
             return base.Channel.CreateAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.CreateResponse> CreateAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.CreateProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.CreateRequest inValue = new SCLog.RightNowServiceReference.CreateRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.CreateResponse> CreateAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.CreateProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.CreateRequest inValue = new ServiceVentures.RightNowServiceReference.CreateRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).CreateAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).CreateAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.GetResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.Get(SCLog.RightNowServiceReference.GetRequest request) {
+        ServiceVentures.RightNowServiceReference.GetResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.Get(ServiceVentures.RightNowServiceReference.GetRequest request) {
             return base.Channel.Get(request);
         }
         
-        public SCLog.RightNowServiceReference.RNObject[] Get(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.GetProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.GetRequest inValue = new SCLog.RightNowServiceReference.GetRequest();
+        public ServiceVentures.RightNowServiceReference.RNObject[] Get(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.GetProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.GetRequest inValue = new ServiceVentures.RightNowServiceReference.GetRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            SCLog.RightNowServiceReference.GetResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).Get(inValue);
+            ServiceVentures.RightNowServiceReference.GetResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).Get(inValue);
             return retVal.RNObjectsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.GetAsync(SCLog.RightNowServiceReference.GetRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.GetAsync(ServiceVentures.RightNowServiceReference.GetRequest request) {
             return base.Channel.GetAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetResponse> GetAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.GetProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.GetRequest inValue = new SCLog.RightNowServiceReference.GetRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetResponse> GetAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.GetProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.GetRequest inValue = new ServiceVentures.RightNowServiceReference.GetRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.UpdateResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.Update(SCLog.RightNowServiceReference.UpdateRequest request) {
+        ServiceVentures.RightNowServiceReference.UpdateResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.Update(ServiceVentures.RightNowServiceReference.UpdateRequest request) {
             return base.Channel.Update(request);
         }
         
-        public void Update(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.UpdateProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.UpdateRequest inValue = new SCLog.RightNowServiceReference.UpdateRequest();
+        public void Update(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.UpdateProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.UpdateRequest inValue = new ServiceVentures.RightNowServiceReference.UpdateRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            SCLog.RightNowServiceReference.UpdateResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).Update(inValue);
+            ServiceVentures.RightNowServiceReference.UpdateResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).Update(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.UpdateResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.UpdateAsync(SCLog.RightNowServiceReference.UpdateRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.UpdateResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.UpdateAsync(ServiceVentures.RightNowServiceReference.UpdateRequest request) {
             return base.Channel.UpdateAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.UpdateResponse> UpdateAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.UpdateProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.UpdateRequest inValue = new SCLog.RightNowServiceReference.UpdateRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.UpdateResponse> UpdateAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.UpdateProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.UpdateRequest inValue = new ServiceVentures.RightNowServiceReference.UpdateRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).UpdateAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).UpdateAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.DestroyResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.Destroy(SCLog.RightNowServiceReference.DestroyRequest request) {
+        ServiceVentures.RightNowServiceReference.DestroyResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.Destroy(ServiceVentures.RightNowServiceReference.DestroyRequest request) {
             return base.Channel.Destroy(request);
         }
         
-        public void Destroy(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.DestroyProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.DestroyRequest inValue = new SCLog.RightNowServiceReference.DestroyRequest();
+        public void Destroy(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.DestroyProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.DestroyRequest inValue = new ServiceVentures.RightNowServiceReference.DestroyRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            SCLog.RightNowServiceReference.DestroyResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).Destroy(inValue);
+            ServiceVentures.RightNowServiceReference.DestroyResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).Destroy(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.DestroyResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.DestroyAsync(SCLog.RightNowServiceReference.DestroyRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.DestroyResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.DestroyAsync(ServiceVentures.RightNowServiceReference.DestroyRequest request) {
             return base.Channel.DestroyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.DestroyResponse> DestroyAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects, SCLog.RightNowServiceReference.DestroyProcessingOptions ProcessingOptions) {
-            SCLog.RightNowServiceReference.DestroyRequest inValue = new SCLog.RightNowServiceReference.DestroyRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.DestroyResponse> DestroyAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects, ServiceVentures.RightNowServiceReference.DestroyProcessingOptions ProcessingOptions) {
+            ServiceVentures.RightNowServiceReference.DestroyRequest inValue = new ServiceVentures.RightNowServiceReference.DestroyRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
             inValue.ProcessingOptions = ProcessingOptions;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).DestroyAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).DestroyAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.QueryObjectsResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.QueryObjects(SCLog.RightNowServiceReference.QueryObjectsRequest request) {
+        ServiceVentures.RightNowServiceReference.QueryObjectsResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.QueryObjects(ServiceVentures.RightNowServiceReference.QueryObjectsRequest request) {
             return base.Channel.QueryObjects(request);
         }
         
-        public SCLog.RightNowServiceReference.QueryResultData[] QueryObjects(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, SCLog.RightNowServiceReference.RNObject[] ObjectTemplates, int PageSize) {
-            SCLog.RightNowServiceReference.QueryObjectsRequest inValue = new SCLog.RightNowServiceReference.QueryObjectsRequest();
+        public ServiceVentures.RightNowServiceReference.QueryResultData[] QueryObjects(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, ServiceVentures.RightNowServiceReference.RNObject[] ObjectTemplates, int PageSize) {
+            ServiceVentures.RightNowServiceReference.QueryObjectsRequest inValue = new ServiceVentures.RightNowServiceReference.QueryObjectsRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.Query = Query;
             inValue.ObjectTemplates = ObjectTemplates;
             inValue.PageSize = PageSize;
-            SCLog.RightNowServiceReference.QueryObjectsResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).QueryObjects(inValue);
+            ServiceVentures.RightNowServiceReference.QueryObjectsResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).QueryObjects(inValue);
             return retVal.Result;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.QueryObjectsResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.QueryObjectsAsync(SCLog.RightNowServiceReference.QueryObjectsRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.QueryObjectsResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.QueryObjectsAsync(ServiceVentures.RightNowServiceReference.QueryObjectsRequest request) {
             return base.Channel.QueryObjectsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.QueryObjectsResponse> QueryObjectsAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, SCLog.RightNowServiceReference.RNObject[] ObjectTemplates, int PageSize) {
-            SCLog.RightNowServiceReference.QueryObjectsRequest inValue = new SCLog.RightNowServiceReference.QueryObjectsRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.QueryObjectsResponse> QueryObjectsAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, ServiceVentures.RightNowServiceReference.RNObject[] ObjectTemplates, int PageSize) {
+            ServiceVentures.RightNowServiceReference.QueryObjectsRequest inValue = new ServiceVentures.RightNowServiceReference.QueryObjectsRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.Query = Query;
             inValue.ObjectTemplates = ObjectTemplates;
             inValue.PageSize = PageSize;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).QueryObjectsAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).QueryObjectsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.QueryCSVResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.QueryCSV(SCLog.RightNowServiceReference.QueryCSVRequest request) {
+        ServiceVentures.RightNowServiceReference.QueryCSVResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.QueryCSV(ServiceVentures.RightNowServiceReference.QueryCSVRequest request) {
             return base.Channel.QueryCSV(request);
         }
         
-        public SCLog.RightNowServiceReference.CSVTableSet QueryCSV(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, int PageSize, string Delimiter, bool ReturnRawResult, bool DisableMTOM, out byte[] FileData) {
-            SCLog.RightNowServiceReference.QueryCSVRequest inValue = new SCLog.RightNowServiceReference.QueryCSVRequest();
+        public ServiceVentures.RightNowServiceReference.CSVTableSet QueryCSV(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string Query, int PageSize, string Delimiter, bool ReturnRawResult, bool DisableMTOM, out byte[] FileData) {
+            ServiceVentures.RightNowServiceReference.QueryCSVRequest inValue = new ServiceVentures.RightNowServiceReference.QueryCSVRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.Query = Query;
             inValue.PageSize = PageSize;
             inValue.Delimiter = Delimiter;
             inValue.ReturnRawResult = ReturnRawResult;
             inValue.DisableMTOM = DisableMTOM;
-            SCLog.RightNowServiceReference.QueryCSVResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).QueryCSV(inValue);
+            ServiceVentures.RightNowServiceReference.QueryCSVResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).QueryCSV(inValue);
             FileData = retVal.FileData;
             return retVal.CSVTableSet;
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.QueryCSVResponse> QueryCSVAsync(SCLog.RightNowServiceReference.QueryCSVRequest request) {
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.QueryCSVResponse> QueryCSVAsync(ServiceVentures.RightNowServiceReference.QueryCSVRequest request) {
             return base.Channel.QueryCSVAsync(request);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.RunAnalyticsReportResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.RunAnalyticsReport(SCLog.RightNowServiceReference.RunAnalyticsReportRequest request) {
+        ServiceVentures.RightNowServiceReference.RunAnalyticsReportResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.RunAnalyticsReport(ServiceVentures.RightNowServiceReference.RunAnalyticsReportRequest request) {
             return base.Channel.RunAnalyticsReport(request);
         }
         
-        public SCLog.RightNowServiceReference.CSVTableSet RunAnalyticsReport(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.AnalyticsReport AnalyticsReport, int Limit, int Start, string Delimiter, bool ReturnRawResult, bool DisableMTOM, out byte[] FileData) {
-            SCLog.RightNowServiceReference.RunAnalyticsReportRequest inValue = new SCLog.RightNowServiceReference.RunAnalyticsReportRequest();
+        public ServiceVentures.RightNowServiceReference.CSVTableSet RunAnalyticsReport(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.AnalyticsReport AnalyticsReport, int Limit, int Start, string Delimiter, bool ReturnRawResult, bool DisableMTOM, out byte[] FileData) {
+            ServiceVentures.RightNowServiceReference.RunAnalyticsReportRequest inValue = new ServiceVentures.RightNowServiceReference.RunAnalyticsReportRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.AnalyticsReport = AnalyticsReport;
             inValue.Limit = Limit;
@@ -24177,103 +24177,103 @@ namespace SCLog.RightNowServiceReference {
             inValue.Delimiter = Delimiter;
             inValue.ReturnRawResult = ReturnRawResult;
             inValue.DisableMTOM = DisableMTOM;
-            SCLog.RightNowServiceReference.RunAnalyticsReportResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).RunAnalyticsReport(inValue);
+            ServiceVentures.RightNowServiceReference.RunAnalyticsReportResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).RunAnalyticsReport(inValue);
             FileData = retVal.FileData;
             return retVal.CSVTableSet;
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.RunAnalyticsReportResponse> RunAnalyticsReportAsync(SCLog.RightNowServiceReference.RunAnalyticsReportRequest request) {
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.RunAnalyticsReportResponse> RunAnalyticsReportAsync(ServiceVentures.RightNowServiceReference.RunAnalyticsReportRequest request) {
             return base.Channel.RunAnalyticsReportAsync(request);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.ExecuteMarketingFlowResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.ExecuteMarketingFlow(SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest request) {
+        ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.ExecuteMarketingFlow(ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest request) {
             return base.Channel.ExecuteMarketingFlow(request);
         }
         
-        public void ExecuteMarketingFlow(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID, SCLog.RightNowServiceReference.ID CampaignID, string EntryPoint) {
-            SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest inValue = new SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest();
+        public void ExecuteMarketingFlow(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID, ServiceVentures.RightNowServiceReference.ID CampaignID, string EntryPoint) {
+            ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest inValue = new ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ContactID = ContactID;
             inValue.CampaignID = CampaignID;
             inValue.EntryPoint = EntryPoint;
-            SCLog.RightNowServiceReference.ExecuteMarketingFlowResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ExecuteMarketingFlow(inValue);
+            ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ExecuteMarketingFlow(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ExecuteMarketingFlowResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.ExecuteMarketingFlowAsync(SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.ExecuteMarketingFlowAsync(ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest request) {
             return base.Channel.ExecuteMarketingFlowAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ExecuteMarketingFlowResponse> ExecuteMarketingFlowAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID, SCLog.RightNowServiceReference.ID CampaignID, string EntryPoint) {
-            SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest inValue = new SCLog.RightNowServiceReference.ExecuteMarketingFlowRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowResponse> ExecuteMarketingFlowAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID, ServiceVentures.RightNowServiceReference.ID CampaignID, string EntryPoint) {
+            ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest inValue = new ServiceVentures.RightNowServiceReference.ExecuteMarketingFlowRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ContactID = ContactID;
             inValue.CampaignID = CampaignID;
             inValue.EntryPoint = EntryPoint;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ExecuteMarketingFlowAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ExecuteMarketingFlowAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.GetFileDataResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.GetFileData(SCLog.RightNowServiceReference.GetFileDataRequest request) {
+        ServiceVentures.RightNowServiceReference.GetFileDataResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.GetFileData(ServiceVentures.RightNowServiceReference.GetFileDataRequest request) {
             return base.Channel.GetFileData(request);
         }
         
-        public byte[] GetFileData(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject RNObject, SCLog.RightNowServiceReference.ID FileID, bool DisableMTOM) {
-            SCLog.RightNowServiceReference.GetFileDataRequest inValue = new SCLog.RightNowServiceReference.GetFileDataRequest();
+        public byte[] GetFileData(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject RNObject, ServiceVentures.RightNowServiceReference.ID FileID, bool DisableMTOM) {
+            ServiceVentures.RightNowServiceReference.GetFileDataRequest inValue = new ServiceVentures.RightNowServiceReference.GetFileDataRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObject = RNObject;
             inValue.FileID = FileID;
             inValue.DisableMTOM = DisableMTOM;
-            SCLog.RightNowServiceReference.GetFileDataResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetFileData(inValue);
+            ServiceVentures.RightNowServiceReference.GetFileDataResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetFileData(inValue);
             return retVal.FileData;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetFileDataResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.GetFileDataAsync(SCLog.RightNowServiceReference.GetFileDataRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetFileDataResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.GetFileDataAsync(ServiceVentures.RightNowServiceReference.GetFileDataRequest request) {
             return base.Channel.GetFileDataAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetFileDataResponse> GetFileDataAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject RNObject, SCLog.RightNowServiceReference.ID FileID, bool DisableMTOM) {
-            SCLog.RightNowServiceReference.GetFileDataRequest inValue = new SCLog.RightNowServiceReference.GetFileDataRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetFileDataResponse> GetFileDataAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject RNObject, ServiceVentures.RightNowServiceReference.ID FileID, bool DisableMTOM) {
+            ServiceVentures.RightNowServiceReference.GetFileDataRequest inValue = new ServiceVentures.RightNowServiceReference.GetFileDataRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObject = RNObject;
             inValue.FileID = FileID;
             inValue.DisableMTOM = DisableMTOM;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetFileDataAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetFileDataAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.ResetContactPasswordResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.ResetContactPassword(SCLog.RightNowServiceReference.ResetContactPasswordRequest request) {
+        ServiceVentures.RightNowServiceReference.ResetContactPasswordResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.ResetContactPassword(ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest request) {
             return base.Channel.ResetContactPassword(request);
         }
         
-        public void ResetContactPassword(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID) {
-            SCLog.RightNowServiceReference.ResetContactPasswordRequest inValue = new SCLog.RightNowServiceReference.ResetContactPasswordRequest();
+        public void ResetContactPassword(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID) {
+            ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest inValue = new ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ContactID = ContactID;
-            SCLog.RightNowServiceReference.ResetContactPasswordResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ResetContactPassword(inValue);
+            ServiceVentures.RightNowServiceReference.ResetContactPasswordResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ResetContactPassword(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ResetContactPasswordResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.ResetContactPasswordAsync(SCLog.RightNowServiceReference.ResetContactPasswordRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ResetContactPasswordResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.ResetContactPasswordAsync(ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest request) {
             return base.Channel.ResetContactPasswordAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ResetContactPasswordResponse> ResetContactPasswordAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID) {
-            SCLog.RightNowServiceReference.ResetContactPasswordRequest inValue = new SCLog.RightNowServiceReference.ResetContactPasswordRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ResetContactPasswordResponse> ResetContactPasswordAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID) {
+            ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest inValue = new ServiceVentures.RightNowServiceReference.ResetContactPasswordRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ContactID = ContactID;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ResetContactPasswordAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ResetContactPasswordAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.SendMailingToContactResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.SendMailingToContact(SCLog.RightNowServiceReference.SendMailingToContactRequest request) {
+        ServiceVentures.RightNowServiceReference.SendMailingToContactResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.SendMailingToContact(ServiceVentures.RightNowServiceReference.SendMailingToContactRequest request) {
             return base.Channel.SendMailingToContact(request);
         }
         
-        public void SendMailingToContact(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID, SCLog.RightNowServiceReference.ID MailingID, System.Nullable<System.DateTime> ScheduledTime, SCLog.RightNowServiceReference.ID IncidentID, SCLog.RightNowServiceReference.ID OpportunityID, SCLog.RightNowServiceReference.ID ChatID) {
-            SCLog.RightNowServiceReference.SendMailingToContactRequest inValue = new SCLog.RightNowServiceReference.SendMailingToContactRequest();
+        public void SendMailingToContact(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID, ServiceVentures.RightNowServiceReference.ID MailingID, System.Nullable<System.DateTime> ScheduledTime, ServiceVentures.RightNowServiceReference.ID IncidentID, ServiceVentures.RightNowServiceReference.ID OpportunityID, ServiceVentures.RightNowServiceReference.ID ChatID) {
+            ServiceVentures.RightNowServiceReference.SendMailingToContactRequest inValue = new ServiceVentures.RightNowServiceReference.SendMailingToContactRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ContactID = ContactID;
             inValue.MailingID = MailingID;
@@ -24281,16 +24281,16 @@ namespace SCLog.RightNowServiceReference {
             inValue.IncidentID = IncidentID;
             inValue.OpportunityID = OpportunityID;
             inValue.ChatID = ChatID;
-            SCLog.RightNowServiceReference.SendMailingToContactResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).SendMailingToContact(inValue);
+            ServiceVentures.RightNowServiceReference.SendMailingToContactResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).SendMailingToContact(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.SendMailingToContactResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.SendMailingToContactAsync(SCLog.RightNowServiceReference.SendMailingToContactRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.SendMailingToContactResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.SendMailingToContactAsync(ServiceVentures.RightNowServiceReference.SendMailingToContactRequest request) {
             return base.Channel.SendMailingToContactAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.SendMailingToContactResponse> SendMailingToContactAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.ID ContactID, SCLog.RightNowServiceReference.ID MailingID, System.Nullable<System.DateTime> ScheduledTime, SCLog.RightNowServiceReference.ID IncidentID, SCLog.RightNowServiceReference.ID OpportunityID, SCLog.RightNowServiceReference.ID ChatID) {
-            SCLog.RightNowServiceReference.SendMailingToContactRequest inValue = new SCLog.RightNowServiceReference.SendMailingToContactRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.SendMailingToContactResponse> SendMailingToContactAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.ID ContactID, ServiceVentures.RightNowServiceReference.ID MailingID, System.Nullable<System.DateTime> ScheduledTime, ServiceVentures.RightNowServiceReference.ID IncidentID, ServiceVentures.RightNowServiceReference.ID OpportunityID, ServiceVentures.RightNowServiceReference.ID ChatID) {
+            ServiceVentures.RightNowServiceReference.SendMailingToContactRequest inValue = new ServiceVentures.RightNowServiceReference.SendMailingToContactRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ContactID = ContactID;
             inValue.MailingID = MailingID;
@@ -24298,235 +24298,235 @@ namespace SCLog.RightNowServiceReference {
             inValue.IncidentID = IncidentID;
             inValue.OpportunityID = OpportunityID;
             inValue.ChatID = ChatID;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).SendMailingToContactAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).SendMailingToContactAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.TransferSubObjectsResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.TransferSubObjects(SCLog.RightNowServiceReference.TransferSubObjectsRequest request) {
+        ServiceVentures.RightNowServiceReference.TransferSubObjectsResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.TransferSubObjects(ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest request) {
             return base.Channel.TransferSubObjects(request);
         }
         
-        public void TransferSubObjects(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject DestinationRNObject, SCLog.RightNowServiceReference.RNObject[] SourceRNObjects) {
-            SCLog.RightNowServiceReference.TransferSubObjectsRequest inValue = new SCLog.RightNowServiceReference.TransferSubObjectsRequest();
+        public void TransferSubObjects(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject DestinationRNObject, ServiceVentures.RightNowServiceReference.RNObject[] SourceRNObjects) {
+            ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest inValue = new ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.DestinationRNObject = DestinationRNObject;
             inValue.SourceRNObjects = SourceRNObjects;
-            SCLog.RightNowServiceReference.TransferSubObjectsResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).TransferSubObjects(inValue);
+            ServiceVentures.RightNowServiceReference.TransferSubObjectsResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).TransferSubObjects(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.TransferSubObjectsResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.TransferSubObjectsAsync(SCLog.RightNowServiceReference.TransferSubObjectsRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.TransferSubObjectsResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.TransferSubObjectsAsync(ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest request) {
             return base.Channel.TransferSubObjectsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.TransferSubObjectsResponse> TransferSubObjectsAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject DestinationRNObject, SCLog.RightNowServiceReference.RNObject[] SourceRNObjects) {
-            SCLog.RightNowServiceReference.TransferSubObjectsRequest inValue = new SCLog.RightNowServiceReference.TransferSubObjectsRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.TransferSubObjectsResponse> TransferSubObjectsAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject DestinationRNObject, ServiceVentures.RightNowServiceReference.RNObject[] SourceRNObjects) {
+            ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest inValue = new ServiceVentures.RightNowServiceReference.TransferSubObjectsRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.DestinationRNObject = DestinationRNObject;
             inValue.SourceRNObjects = SourceRNObjects;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).TransferSubObjectsAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).TransferSubObjectsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.BatchResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.Batch(SCLog.RightNowServiceReference.BatchRequest request) {
+        ServiceVentures.RightNowServiceReference.BatchResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.Batch(ServiceVentures.RightNowServiceReference.BatchRequest request) {
             return base.Channel.Batch(request);
         }
         
-        public SCLog.RightNowServiceReference.BatchResponseItem[] Batch(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.BatchRequestItem[] BatchRequestItem) {
-            SCLog.RightNowServiceReference.BatchRequest inValue = new SCLog.RightNowServiceReference.BatchRequest();
+        public ServiceVentures.RightNowServiceReference.BatchResponseItem[] Batch(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.BatchRequestItem[] BatchRequestItem) {
+            ServiceVentures.RightNowServiceReference.BatchRequest inValue = new ServiceVentures.RightNowServiceReference.BatchRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.BatchRequestItem = BatchRequestItem;
-            SCLog.RightNowServiceReference.BatchResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).Batch(inValue);
+            ServiceVentures.RightNowServiceReference.BatchResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).Batch(inValue);
             return retVal.BatchResponseItem;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.BatchResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.BatchAsync(SCLog.RightNowServiceReference.BatchRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.BatchResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.BatchAsync(ServiceVentures.RightNowServiceReference.BatchRequest request) {
             return base.Channel.BatchAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.BatchResponse> BatchAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.BatchRequestItem[] BatchRequestItem) {
-            SCLog.RightNowServiceReference.BatchRequest inValue = new SCLog.RightNowServiceReference.BatchRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.BatchResponse> BatchAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.BatchRequestItem[] BatchRequestItem) {
+            ServiceVentures.RightNowServiceReference.BatchRequest inValue = new ServiceVentures.RightNowServiceReference.BatchRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.BatchRequestItem = BatchRequestItem;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).BatchAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).BatchAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.GetMetaDataResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.GetMetaData(SCLog.RightNowServiceReference.GetMetaDataRequest request) {
+        ServiceVentures.RightNowServiceReference.GetMetaDataResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.GetMetaData(ServiceVentures.RightNowServiceReference.GetMetaDataRequest request) {
             return base.Channel.GetMetaData(request);
         }
         
-        public SCLog.RightNowServiceReference.MetaDataClass[] GetMetaData(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
-            SCLog.RightNowServiceReference.GetMetaDataRequest inValue = new SCLog.RightNowServiceReference.GetMetaDataRequest();
+        public ServiceVentures.RightNowServiceReference.MetaDataClass[] GetMetaData(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
+            ServiceVentures.RightNowServiceReference.GetMetaDataRequest inValue = new ServiceVentures.RightNowServiceReference.GetMetaDataRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
-            SCLog.RightNowServiceReference.GetMetaDataResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetMetaData(inValue);
+            ServiceVentures.RightNowServiceReference.GetMetaDataResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetMetaData(inValue);
             return retVal.MetaDataClass;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.GetMetaDataAsync(SCLog.RightNowServiceReference.GetMetaDataRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.GetMetaDataAsync(ServiceVentures.RightNowServiceReference.GetMetaDataRequest request) {
             return base.Channel.GetMetaDataAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataResponse> GetMetaDataAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
-            SCLog.RightNowServiceReference.GetMetaDataRequest inValue = new SCLog.RightNowServiceReference.GetMetaDataRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataResponse> GetMetaDataAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
+            ServiceVentures.RightNowServiceReference.GetMetaDataRequest inValue = new ServiceVentures.RightNowServiceReference.GetMetaDataRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetMetaDataAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetMetaDataAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.GetMetaDataForClassResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.GetMetaDataForClass(SCLog.RightNowServiceReference.GetMetaDataForClassRequest request) {
+        ServiceVentures.RightNowServiceReference.GetMetaDataForClassResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.GetMetaDataForClass(ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest request) {
             return base.Channel.GetMetaDataForClass(request);
         }
         
-        public SCLog.RightNowServiceReference.MetaDataClass[] GetMetaDataForClass(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string[] ClassName, SCLog.RightNowServiceReference.RNObjectType[] QualifiedClassName, string[] MetaDataLink) {
-            SCLog.RightNowServiceReference.GetMetaDataForClassRequest inValue = new SCLog.RightNowServiceReference.GetMetaDataForClassRequest();
+        public ServiceVentures.RightNowServiceReference.MetaDataClass[] GetMetaDataForClass(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string[] ClassName, ServiceVentures.RightNowServiceReference.RNObjectType[] QualifiedClassName, string[] MetaDataLink) {
+            ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest inValue = new ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ClassName = ClassName;
             inValue.QualifiedClassName = QualifiedClassName;
             inValue.MetaDataLink = MetaDataLink;
-            SCLog.RightNowServiceReference.GetMetaDataForClassResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetMetaDataForClass(inValue);
+            ServiceVentures.RightNowServiceReference.GetMetaDataForClassResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetMetaDataForClass(inValue);
             return retVal.MetaDataClass;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataForClassResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.GetMetaDataForClassAsync(SCLog.RightNowServiceReference.GetMetaDataForClassRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataForClassResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.GetMetaDataForClassAsync(ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest request) {
             return base.Channel.GetMetaDataForClassAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataForClassResponse> GetMetaDataForClassAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string[] ClassName, SCLog.RightNowServiceReference.RNObjectType[] QualifiedClassName, string[] MetaDataLink) {
-            SCLog.RightNowServiceReference.GetMetaDataForClassRequest inValue = new SCLog.RightNowServiceReference.GetMetaDataForClassRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataForClassResponse> GetMetaDataForClassAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string[] ClassName, ServiceVentures.RightNowServiceReference.RNObjectType[] QualifiedClassName, string[] MetaDataLink) {
+            ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest inValue = new ServiceVentures.RightNowServiceReference.GetMetaDataForClassRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.ClassName = ClassName;
             inValue.QualifiedClassName = QualifiedClassName;
             inValue.MetaDataLink = MetaDataLink;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetMetaDataForClassAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetMetaDataForClassAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.GetMetaDataLastChangeTime(SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request) {
+        ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.GetMetaDataLastChangeTime(ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request) {
             return base.Channel.GetMetaDataLastChangeTime(request);
         }
         
-        public System.DateTime GetMetaDataLastChangeTime(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
-            SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest inValue = new SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest();
+        public System.DateTime GetMetaDataLastChangeTime(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
+            ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest inValue = new ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
-            SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetMetaDataLastChangeTime(inValue);
+            ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetMetaDataLastChangeTime(inValue);
             return retVal.LastChangeDateTime;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.GetMetaDataLastChangeTimeAsync(SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.GetMetaDataLastChangeTimeAsync(ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest request) {
             return base.Channel.GetMetaDataLastChangeTimeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeResponse> GetMetaDataLastChangeTimeAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
-            SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest inValue = new SCLog.RightNowServiceReference.GetMetaDataLastChangeTimeRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeResponse> GetMetaDataLastChangeTimeAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader) {
+            ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest inValue = new ServiceVentures.RightNowServiceReference.GetMetaDataLastChangeTimeRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetMetaDataLastChangeTimeAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetMetaDataLastChangeTimeAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.GetValuesForNamedIDResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.GetValuesForNamedID(SCLog.RightNowServiceReference.GetValuesForNamedIDRequest request) {
+        ServiceVentures.RightNowServiceReference.GetValuesForNamedIDResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.GetValuesForNamedID(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest request) {
             return base.Channel.GetValuesForNamedID(request);
         }
         
-        public SCLog.RightNowServiceReference.NamedID[] GetValuesForNamedID(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string PackageName, string FieldName) {
-            SCLog.RightNowServiceReference.GetValuesForNamedIDRequest inValue = new SCLog.RightNowServiceReference.GetValuesForNamedIDRequest();
+        public ServiceVentures.RightNowServiceReference.NamedID[] GetValuesForNamedID(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string PackageName, string FieldName) {
+            ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest inValue = new ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.PackageName = PackageName;
             inValue.FieldName = FieldName;
-            SCLog.RightNowServiceReference.GetValuesForNamedIDResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetValuesForNamedID(inValue);
+            ServiceVentures.RightNowServiceReference.GetValuesForNamedIDResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetValuesForNamedID(inValue);
             return retVal.Entry;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetValuesForNamedIDResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.GetValuesForNamedIDAsync(SCLog.RightNowServiceReference.GetValuesForNamedIDRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetValuesForNamedIDResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.GetValuesForNamedIDAsync(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest request) {
             return base.Channel.GetValuesForNamedIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetValuesForNamedIDResponse> GetValuesForNamedIDAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string PackageName, string FieldName) {
-            SCLog.RightNowServiceReference.GetValuesForNamedIDRequest inValue = new SCLog.RightNowServiceReference.GetValuesForNamedIDRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetValuesForNamedIDResponse> GetValuesForNamedIDAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string PackageName, string FieldName) {
+            ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest inValue = new ServiceVentures.RightNowServiceReference.GetValuesForNamedIDRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.PackageName = PackageName;
             inValue.FieldName = FieldName;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetValuesForNamedIDAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetValuesForNamedIDAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.GetValuesForNamedIDHierarchy(SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request) {
+        ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.GetValuesForNamedIDHierarchy(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request) {
             return base.Channel.GetValuesForNamedIDHierarchy(request);
         }
         
-        public SCLog.RightNowServiceReference.NamedIDWithParent[] GetValuesForNamedIDHierarchy(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string FieldName) {
-            SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest inValue = new SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest();
+        public ServiceVentures.RightNowServiceReference.NamedIDWithParent[] GetValuesForNamedIDHierarchy(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string FieldName) {
+            ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest inValue = new ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.FieldName = FieldName;
-            SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetValuesForNamedIDHierarchy(inValue);
+            ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetValuesForNamedIDHierarchy(inValue);
             return retVal.Entry;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.GetValuesForNamedIDHierarchyAsync(SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.GetValuesForNamedIDHierarchyAsync(ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest request) {
             return base.Channel.GetValuesForNamedIDHierarchyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse> GetValuesForNamedIDHierarchyAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string FieldName) {
-            SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest inValue = new SCLog.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyResponse> GetValuesForNamedIDHierarchyAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, string FieldName) {
+            ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest inValue = new ServiceVentures.RightNowServiceReference.GetValuesForNamedIDHierarchyRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.FieldName = FieldName;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetValuesForNamedIDHierarchyAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).GetValuesForNamedIDHierarchyAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.ConvertGenericToObjectResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.ConvertGenericToObject(SCLog.RightNowServiceReference.ConvertGenericToObjectRequest request) {
+        ServiceVentures.RightNowServiceReference.ConvertGenericToObjectResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.ConvertGenericToObject(ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest request) {
             return base.Channel.ConvertGenericToObject(request);
         }
         
-        public SCLog.RightNowServiceReference.RNObject[] ConvertGenericToObject(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects) {
-            SCLog.RightNowServiceReference.ConvertGenericToObjectRequest inValue = new SCLog.RightNowServiceReference.ConvertGenericToObjectRequest();
+        public ServiceVentures.RightNowServiceReference.RNObject[] ConvertGenericToObject(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects) {
+            ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest inValue = new ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
-            SCLog.RightNowServiceReference.ConvertGenericToObjectResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ConvertGenericToObject(inValue);
+            ServiceVentures.RightNowServiceReference.ConvertGenericToObjectResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ConvertGenericToObject(inValue);
             return retVal.RNObjectsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ConvertGenericToObjectResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.ConvertGenericToObjectAsync(SCLog.RightNowServiceReference.ConvertGenericToObjectRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ConvertGenericToObjectResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.ConvertGenericToObjectAsync(ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest request) {
             return base.Channel.ConvertGenericToObjectAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ConvertGenericToObjectResponse> ConvertGenericToObjectAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects) {
-            SCLog.RightNowServiceReference.ConvertGenericToObjectRequest inValue = new SCLog.RightNowServiceReference.ConvertGenericToObjectRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ConvertGenericToObjectResponse> ConvertGenericToObjectAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects) {
+            ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest inValue = new ServiceVentures.RightNowServiceReference.ConvertGenericToObjectRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ConvertGenericToObjectAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ConvertGenericToObjectAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SCLog.RightNowServiceReference.ConvertObjectToGenericResponse SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.ConvertObjectToGeneric(SCLog.RightNowServiceReference.ConvertObjectToGenericRequest request) {
+        ServiceVentures.RightNowServiceReference.ConvertObjectToGenericResponse ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.ConvertObjectToGeneric(ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest request) {
             return base.Channel.ConvertObjectToGeneric(request);
         }
         
-        public SCLog.RightNowServiceReference.RNObject[] ConvertObjectToGeneric(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects) {
-            SCLog.RightNowServiceReference.ConvertObjectToGenericRequest inValue = new SCLog.RightNowServiceReference.ConvertObjectToGenericRequest();
+        public ServiceVentures.RightNowServiceReference.RNObject[] ConvertObjectToGeneric(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects) {
+            ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest inValue = new ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
-            SCLog.RightNowServiceReference.ConvertObjectToGenericResponse retVal = ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ConvertObjectToGeneric(inValue);
+            ServiceVentures.RightNowServiceReference.ConvertObjectToGenericResponse retVal = ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ConvertObjectToGeneric(inValue);
             return retVal.RNObjectsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ConvertObjectToGenericResponse> SCLog.RightNowServiceReference.RightNowFedAuthSyncPort.ConvertObjectToGenericAsync(SCLog.RightNowServiceReference.ConvertObjectToGenericRequest request) {
+        System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ConvertObjectToGenericResponse> ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort.ConvertObjectToGenericAsync(ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest request) {
             return base.Channel.ConvertObjectToGenericAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SCLog.RightNowServiceReference.ConvertObjectToGenericResponse> ConvertObjectToGenericAsync(SCLog.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, SCLog.RightNowServiceReference.RNObject[] RNObjects) {
-            SCLog.RightNowServiceReference.ConvertObjectToGenericRequest inValue = new SCLog.RightNowServiceReference.ConvertObjectToGenericRequest();
+        public System.Threading.Tasks.Task<ServiceVentures.RightNowServiceReference.ConvertObjectToGenericResponse> ConvertObjectToGenericAsync(ServiceVentures.RightNowServiceReference.ClientInfoHeader ClientInfoHeader, ServiceVentures.RightNowServiceReference.RNObject[] RNObjects) {
+            ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest inValue = new ServiceVentures.RightNowServiceReference.ConvertObjectToGenericRequest();
             inValue.ClientInfoHeader = ClientInfoHeader;
             inValue.RNObjects = RNObjects;
-            return ((SCLog.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ConvertObjectToGenericAsync(inValue);
+            return ((ServiceVentures.RightNowServiceReference.RightNowFedAuthSyncPort)(this)).ConvertObjectToGenericAsync(inValue);
         }
     }
 }
