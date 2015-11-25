@@ -226,6 +226,11 @@ namespace ServiceVentures
             return this.log(message, detail, incident, contact, source, function, timeElapsed, logLevel.Debug, host, processID);
         }
 
+        public Boolean click(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0, string host = null, int processID = 0)
+        {
+            return this.log(message, detail, incident, contact, source, function, timeElapsed, logLevel.Click, host, processID);
+        }
+
         public Boolean notice(string message, string detail = null, Incident incident = null, Contact contact = null, string source = null, string function = null, int timeElapsed = 0, string host = null, int processID = 0)
         {
             return this.log(message, detail, incident, contact, source, function, timeElapsed, logLevel.Notice, host, processID);
